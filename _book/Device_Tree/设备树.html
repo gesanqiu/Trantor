@@ -1,0 +1,774 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Device Tree · Trantor</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Ricardo Lu">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-treeview/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Gstreamer/Gstreamer.html" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://fzl123.top" target="_blank" class="custom-link">Blog Page</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Linux Device Tree</li>
+        
+        
+    
+        <li class="chapter active" data-level="2.1" data-path="设备树.html">
+            
+                <a href="设备树.html">
+            
+                    
+                    Device Tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Gstreamer</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../Gstreamer/Gstreamer.html">
+            
+                <a href="../Gstreamer/Gstreamer.html">
+            
+                    
+                    Gstreamer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">I2C</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../I2C/I2C通信协议.html">
+            
+                <a href="../I2C/I2C通信协议.html">
+            
+                    
+                    I2C Protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Linux Driver Model</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../Linux_Driver_Model/Linux内核整体框架.html">
+            
+                <a href="../Linux_Driver_Model/Linux内核整体框架.html">
+            
+                    
+                    Linux 内核整体框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../Linux_Driver_Model/Kobject.html">
+            
+                <a href="../Linux_Driver_Model/Kobject.html">
+            
+                    
+                    KObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../Linux_Driver_Model/Uevent.html">
+            
+                <a href="../Linux_Driver_Model/Uevent.html">
+            
+                    
+                    Uevent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../Linux_Driver_Model/Review_of_the_Training.html">
+            
+                <a href="../Linux_Driver_Model/Review_of_the_Training.html">
+            
+                    
+                    A simple sample
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">OpenMAX</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../OpenMAX/OpenMAX概述.html">
+            
+                <a href="../OpenMAX/OpenMAX概述.html">
+            
+                    
+                    OpenMAX概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Others</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../RTSP&RTP&RTCP/RTSP&RTP&RTCP.html">
+            
+                <a href="../RTSP&RTP&RTCP/RTSP&RTP&RTCP.html">
+            
+                    
+                    RTP & RTCP & RTSP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Device Tree</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div class="treeview__container"><ul>
+<li><div><a href="#&#x8BBE;&#x5907;&#x6811;">&#x8BBE;&#x5907;&#x6811;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x7EC4;&#x6210;">&#x7EC4;&#x6210;</a><i></i></div></li>
+<li><div><a href="#&#x7ED3;&#x6784;">&#x7ED3;&#x6784;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#property">property</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#dts">DTS</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#node&#x7ED3;&#x6784;">node&#x7ED3;&#x6784;</a><i></i></div></li>
+<li><div><a href="#&#x8BBE;&#x5907;&#x8282;&#x70B9;&#x7ED3;&#x6784;&#x4F53;">&#x8BBE;&#x5907;&#x8282;&#x70B9;&#x7ED3;&#x6784;&#x4F53;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#dts&#x793A;&#x4F8B;">DTS&#x793A;&#x4F8B;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#reg">reg</a><i></i></div></li>
+<li><div><a href="#&#x5F15;&#x7528;">&#x5F15;&#x7528;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#phandle&#x5F15;&#x7528;">phandle&#x5F15;&#x7528;</a><i></i></div></li>
+<li><div><a href="#label&#x5F15;&#x7528;">label&#x5F15;&#x7528;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x8986;&#x76D6;">&#x8986;&#x76D6;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#1&#x540C;&#x4E00;&#x5C42;&#x6B21;&#x7684;&#x8282;&#x70B9;&#xFF0C;&#x540E;&#x9762;&#x7684;&#x4F1A;&#x8986;&#x76D6;&#x524D;&#x9762;&#x7684;&#x8282;&#x70B9;">1.&#x540C;&#x4E00;&#x5C42;&#x6B21;&#x7684;&#x8282;&#x70B9;&#xFF0C;&#x540E;&#x9762;&#x7684;&#x4F1A;&#x8986;&#x76D6;&#x524D;&#x9762;&#x7684;&#x8282;&#x70B9;</a><i></i></div></li>
+<li><div><a href="#2&#x76F4;&#x63A5;&#x5F15;&#x7528;&#x65B9;&#x5F0F;&#x8986;&#x76D6;&#xFF08;&#x589E;&#x52A0;&#xFF09;&#x8282;&#x70B9;&#x5C5E;&#x6027;">2.&#x76F4;&#x63A5;&#x5F15;&#x7528;&#x65B9;&#x5F0F;&#x8986;&#x76D6;&#xFF08;&#x589E;&#x52A0;&#xFF09;&#x8282;&#x70B9;&#x5C5E;&#x6027;</a><i></i></div></li>
+</ul></li>
+</ul></li>
+<li><div><a href="#dtb">DTB</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#dtb&#x8D77;&#x59CB;&#x6BB5;">DTB&#x8D77;&#x59CB;&#x6BB5;</a><i></i></div></li>
+<li><div><a href="#&#x5185;&#x5B58;&#x9884;&#x7559;&#x6BB5;">&#x5185;&#x5B58;&#x9884;&#x7559;&#x6BB5;</a><i></i></div></li>
+<li><div><a href="#&#x7ED3;&#x6784;&#x5757;">&#x7ED3;&#x6784;&#x5757;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x4EE4;&#x724C;">&#x4EE4;&#x724C;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x5B57;&#x7B26;&#x4E32;&#x5757;">&#x5B57;&#x7B26;&#x4E32;&#x5757;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#dtb&#x793A;&#x4F8B;">DTB&#x793A;&#x4F8B;</a><i></i></div></li>
+</ul></li>
+</ul>
+</div>
+
+<h1 id="&#x8BBE;&#x5907;&#x6811;">&#x8BBE;&#x5907;&#x6811;</h1>
+<blockquote>
+<p><strong>&#x8BBE;&#x5907;&#x6811;&#x662F;&#x4E00;&#x79CD;&#x63CF;&#x8FF0;&#x786C;&#x4EF6;&#x8D44;&#x6E90;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;</strong>&#x3002;&#x5B83;&#x901A;&#x8FC7;bootloader&#x5C06;&#x786C;&#x4EF6;&#x8D44;&#x6E90;&#x4F20;&#x7ED9;&#x5185;&#x6838;&#xFF0C;&#x4F7F;&#x5F97;&#x5185;&#x6838;&#x548C;&#x786C;&#x4EF6;&#x8D44;&#x6E90;&#x63CF;&#x8FF0;&#x76F8;&#x5BF9;&#x72EC;&#x7ACB;&#x3002;</p>
+<p>&#x8BBE;&#x5907;&#x6811;&#x7684;<strong>&#x4E3B;&#x8981;&#x4F18;&#x52BF;</strong>&#xFF1A;&#x5BF9;&#x4E8E;&#x540C;&#x4E00;SOC&#x7684;&#x4E0D;&#x540C;&#x4E3B;&#x677F;&#xFF0C;&#x53EA;&#x9700;&#x66F4;&#x6362;&#x8BBE;&#x5907;&#x6811;&#x6587;&#x4EF6;.dtb&#x5373;&#x53EF;&#x5B9E;&#x73B0;&#x4E0D;&#x540C;&#x4E3B;&#x677F;&#x7684;&#x65E0;&#x5DEE;&#x5F02;&#x652F;&#x6301;&#xFF0C;&#x800C;&#x65E0;&#x9700;&#x66F4;&#x6362;&#x5185;&#x6838;&#x6587;&#x4EF6;&#x3002;</p>
+</blockquote>
+<h2 id="&#x7EC4;&#x6210;">&#x7EC4;&#x6210;</h2>
+<ul>
+<li><code>DTS&#xFF08;Device Tree Source&#xFF09;</code>&#xFF1A;dts&#x6587;&#x4EF6;&#x662F;&#x5BF9;Device Tree&#x7684;&#x63CF;&#x8FF0;&#xFF0C;&#x653E;&#x7F6E;&#x5728;&#x5185;&#x6838;&#x7684;/arch/arm/boot/dts&#x76EE;&#x5F55;&#x3002;&#x4E00;&#x4E2A;dts&#x6587;&#x4EF6;&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;ARM&#x7684;machine&#x3002;dts&#x6587;&#x4EF6;&#x63CF;&#x8FF0;&#x4E86;&#x4E00;&#x4E2A;&#x677F;&#x5B50;&#x7684;&#x786C;&#x4EF6;&#x8D44;&#x6E90;&#x3002;</li>
+<li><code>DTC&#xFF08;Device Tree Compiler&#xFF09;</code>&#xFF1A;&#x7F16;&#x8BD1;&#x5DE5;&#x5177;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;dts&#x6587;&#x4EF6;&#x7F16;&#x8BD1;&#x6210;dtb&#x6587;&#x4EF6;&#x3002;</li>
+<li><code>DTB&#xFF08;Device Tree Blob&#xFF09;</code>&#xFF1A;DTC&#x5C06;dts&#x7F16;&#x8BD1;&#x6210;dtb&#x6587;&#x4EF6;&#xFF0C;bootloader&#x5728;&#x5F15;&#x5BFC;&#x5185;&#x6838;&#x662F;&#xFF0C;&#x4F1A;&#x9884;&#x5148;&#x8BFB;&#x53D6;dtb&#x6587;&#x4EF6;&#x5230;&#x5185;&#x5B58;&#x8FDB;&#x800C;&#x7531;&#x5185;&#x6838;&#x89E3;&#x6790;&#x3002;</li>
+<li><code>DTSI&#xFF08;Device Tree Source Include&#xFF09;</code>&#xFF1A;dts&#x6587;&#x4EF6;&#x7684;&#x5934;&#x6587;&#x4EF6;&#x3002;&#x7531;&#x4E8E;&#x4E00;&#x4E2A;SOC&#x53EF;&#x80FD;&#x6709;&#x591A;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x7535;&#x8DEF;&#x677F;&#xFF0C;&#x800C;&#x6BCF;&#x4E2A;&#x7535;&#x8DEF;&#x677F;&#x62E5;&#x6709;&#x4E00;&#x4E2A; .dts&#x3002;&#x8FD9;&#x4E9B;dts&#x53EF;&#x80FD;&#x4F1A;&#x5B58;&#x5728;&#x8BB8;&#x591A;&#x5171;&#x540C;&#x90E8;&#x5206;&#xFF0C;&#x4E3A;&#x4E86;&#x51CF;&#x5C11;&#x4EE3;&#x7801;&#x7684;&#x5197;&#x4F59;&#xFF0C;&#x8BBE;&#x5907;&#x6811;&#x5C06;&#x8FD9;&#x4E9B;&#x5171;&#x540C;&#x90E8;&#x5206;&#x63D0;&#x70BC;&#x4FDD;&#x5B58;&#x5728;.dtsi&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x4F9B;&#x4E0D;&#x540C;&#x7684;dts&#x5171;&#x540C;&#x4F7F;&#x7528;&#x3002;</li>
+</ul>
+<h2 id="&#x7ED3;&#x6784;">&#x7ED3;&#x6784;</h2>
+<blockquote>
+<p>/ o device-tree
+      |- name = &quot;device-tree&quot;
+      |- model = &quot;MyBoardName&quot;
+      |- compatible = &quot;MyBoardFamilyName&quot;
+      |- #address-cells = <2>
+      |- #size-cells = <2>
+      |- linux,phandle = <0>
+      |
+      o cpus
+      | | - name = &quot;cpus&quot;
+      | | - linux,phandle = <1>
+      | | - #address-cells = <1>
+      | | - #size-cells = <0>
+      | |
+      | o PowerPC,970@0
+      |   |- name = &quot;PowerPC,970&quot;
+      |   |- device_type = &quot;cpu&quot;
+      |   |- reg = <0>
+      |   |- clock-frequency = <0x5f5e1000>
+      |   |- 64-bit
+      |   |- linux,phandle = <2>
+      |
+      o memory@0
+      | |- name = &quot;memory&quot;
+      | |- device_type = &quot;memory&quot;
+      | |- reg = <0x00000000 0x00000000="" 0x20000000="">
+      | |- linux,phandle = <3>
+      |
+      o chosen
+        |- name = &quot;chosen&quot;
+        |- bootargs = &quot;root=/dev/sda2&quot;
+        |- linux,phandle = <4></4></3></0x00000000></2></0x5f5e1000></0></0></1></1></0></2></2></p>
+</blockquote>
+<ul>
+<li><p>device tree&#x7684;&#x57FA;&#x672C;&#x5355;&#x5143;&#x662F;node&#xFF0C;node&#x7EC4;&#x6210;&#x4E86;&#x6811;&#x72B6;&#x7ED3;&#x6784;&#x3002;</p>
+</li>
+<li><p>&#x9664;&#x4E86;root node&#xFF0C;&#x6BCF;&#x4E2A;node&#x90FD;&#x53EA;&#x6709;&#x4E00;&#x4E2A;parent&#xFF0C;&#x4E00;&#x4E2A;device tree&#x6587;&#x4EF6;&#x4E2D;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A;root node</p>
+</li>
+<li>&#x6BCF;&#x4E2A;node&#x5305;&#x542B;&#x4E86;&#x82E5;&#x5E72;&#x7684;<property,value>&#x6765;&#x63CF;&#x8FF0;node</property,value></li>
+<li>&#x6BCF;&#x4E2A;node&#x4F7F;&#x7528;node name&#x6765;&#x6807;&#x8BC6;&#xFF1A;node-name[@unit-address]&#xFF08;&#x9700;&#x8981;reg&#x5C5E;&#x6027;&#xFF09;</li>
+<li>&#x5F15;&#x7528;node&#x9700;&#x8981;&#x4F7F;&#x7528;full path</li>
+</ul>
+<h3 id="property">property</h3>
+<ol>
+<li>property&#x7684;value&#x53EF;&#x80FD;&#x4E3A;&#x7A7A;</li>
+<li>&#x53EF;&#x80FD;&#x662F;&#x4E00;&#x4E2A;u32&#x3001;u64&#x7684;&#x6570;&#x503C;&#xFF0C;&#x7528;&lt;&gt;&#x8868;&#x793A;&#x4F8B;&#x5982;cell&#x5728;Device Tree&#x4E2D;&#x8868;&#x793A;32bit&#x7684;&#x4FE1;&#x606F;&#x5355;&#x4F4D;</li>
+<li>&#x53EF;&#x4EE5;&#x662F;string&#x6216;string list</li>
+<li>&#x53EF;&#x4EE5;&#x662F;binary data&#xFF0C;&#x7528;[]&#x8868;&#x793A;</li>
+</ol>
+<h2 id="dts">DTS</h2>
+<h3 id="node&#x7ED3;&#x6784;">node&#x7ED3;&#x6784;</h3>
+<pre><code class="lang-c">[label:] node-name[@unit-address] {
+   [properties definitions]
+   [child nodes]
+}
+</code></pre>
+<ul>
+<li><code>label</code>&#x4E3A;&#x5F15;&#x7528;&#xFF0C;node&#x5BFB;&#x5740;&#x4E3A;full path&#xFF0C;&#x5728;&#x591A;&#x5C42;&#x5D4C;&#x5957;&#x662F;&#x5F15;&#x7528;&#x4E0D;&#x4FBF;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;label&#x76F4;&#x63A5;&#x5F15;&#x7528;</li>
+<li><code>@unit-address</code>&#x901A;&#x5E38;&#x7528;&#x4E8E;&#x533A;&#x5206;&#x540C;&#x4E00;&#x7EA7;&#x522B;&#xFF08;&#x4E0D;&#x540C;&#x7EA7;&#x522B;&#x8BBE;&#x5907;&#x8282;&#x70B9;&#x540D;&#x79F0;&#x53EF;&#x4EE5;&#x76F8;&#x540C;&#xFF0C;&#x901A;&#x8FC7;&#x5730;&#x5740;&#x533A;&#x5206;&#xFF09;&#x540D;&#x5B57;&#x76F8;&#x540C;&#x7684;&#x5916;&#x8BBE;&#x5907;&#xFF08;&#x4F8B;&#x5982;&#x4E24;&#x5757;&#x5185;&#x5B58;&#xFF09;</li>
+<li><code>child node</code>&#x53EF;&#x5D4C;&#x5957;</li>
+</ul>
+<h3 id="&#x8BBE;&#x5907;&#x8282;&#x70B9;&#x7ED3;&#x6784;&#x4F53;">&#x8BBE;&#x5907;&#x8282;&#x70B9;&#x7ED3;&#x6784;&#x4F53;</h3>
+<pre><code class="lang-c"><span class="hljs-keyword">struct</span> device_node {
+    <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> *name; <span class="hljs-comment">//&#x8BBE;&#x5907;name</span>
+    <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> *type; <span class="hljs-comment">//&#x8BBE;&#x5907;&#x7C7B;&#x578B;</span>
+    phandle phandle;
+    <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> *full_name; <span class="hljs-comment">//&#x8BBE;&#x5907;&#x5168;&#x79F0;&#xFF0C;&#x5305;&#x62EC;&#x7236;&#x8BBE;&#x5907;&#x540D;</span>
+    <span class="hljs-keyword">struct</span> property *properties; <span class="hljs-comment">//&#x8BBE;&#x5907;&#x5C5E;&#x6027;&#x94FE;&#x8868;</span>
+    <span class="hljs-keyword">struct</span> property *deadprops; <span class="hljs-comment">//removed properties</span>
+    <span class="hljs-keyword">struct</span> device_node *parent; <span class="hljs-comment">//&#x6307;&#x5411;&#x7236;&#x8282;&#x70B9;</span>
+    <span class="hljs-keyword">struct</span> device_node *child; <span class="hljs-comment">//&#x6307;&#x5411;&#x5B50;&#x8282;&#x70B9;</span>
+    <span class="hljs-keyword">struct</span> device_node *sibling; <span class="hljs-comment">//&#x6307;&#x5411;&#x5144;&#x5F1F;&#x8282;&#x70B9;</span>
+    <span class="hljs-keyword">struct</span> device_node *next; <span class="hljs-comment">//&#x76F8;&#x540C;&#x8BBE;&#x5907;&#x7C7B;&#x578B;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;</span>
+    <span class="hljs-keyword">struct</span> device_node *allnext; <span class="hljs-comment">//next in list of all nodes</span>
+    <span class="hljs-keyword">struct</span> proc_dir_entry *pde; <span class="hljs-comment">//&#x8BE5;&#x8282;&#x70B9;&#x5BF9;&#x5E94;&#x7684;proc</span>
+    <span class="hljs-keyword">struct</span> kref kref;
+    <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">long</span> _flags;
+    <span class="hljs-keyword">void</span> *data;
+<span class="hljs-meta">#<span class="hljs-meta-keyword">if</span> defined(CONFIG_SPARC)</span>
+    <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> *path_component_name;
+    <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">int</span> unique_id;
+    <span class="hljs-keyword">struct</span> of_irq_controller *irq_trans;
+<span class="hljs-meta">#<span class="hljs-meta-keyword">endif</span></span>
+};
+</code></pre>
+<h2 id="dts&#x793A;&#x4F8B;">DTS&#x793A;&#x4F8B;</h2>
+<pre><code class="lang-c">/dts-v1/;
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;dt-bindings/input/input.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-string">&quot;s5pv210.dtsi&quot;</span></span>
+
+/ {
+    model = <span class="hljs-string">&quot;YIC System SMDKV210 based on S5PV210&quot;</span>;
+    compatible = <span class="hljs-string">&quot;yic,smdkv210&quot;</span>, <span class="hljs-string">&quot;samsung,s5pv210&quot;</span>;
+
+    chosen {
+        bootargs = <span class="hljs-string">&quot;console=ttySAC2,115200n8 root=/dev/nfs nfsroot=192.168.0.101:/home/run/work/rootfs/rootfs_3.16.57 ip=192.1    68.0.20 init=/linuxrci earlyprintk&quot;</span>;
+    };  
+
+    memory@<span class="hljs-number">30000000</span> {
+        device_type = <span class="hljs-string">&quot;memory&quot;</span>;
+        reg = &lt;<span class="hljs-number">0x30000000</span> <span class="hljs-number">0x20000000</span>&gt;;
+    };  
+
+   ethernet@<span class="hljs-number">88000000</span> {
+        compatible = <span class="hljs-string">&quot;davicom,dm9000&quot;</span>;
+        reg = &lt;<span class="hljs-number">0x88000000</span> <span class="hljs-number">0x2</span> <span class="hljs-number">0x88000004</span> <span class="hljs-number">0x2</span>&gt;;
+        interrupt-parent = &lt;&amp;gph1&gt;;
+        interrupts = &lt;<span class="hljs-number">2</span> <span class="hljs-number">4</span>&gt;;
+        local-mac-address = [<span class="hljs-number">00</span> <span class="hljs-number">00</span> de ad be ef];
+        davicom,no-eeprom;
+        clocks = &lt;&amp;clocks CLK_SROMC&gt;;
+        clock-names = <span class="hljs-string">&quot;sromc&quot;</span>;
+    };
+
+    key {
+        empty_property;
+    }
+};
+</code></pre>
+<ul>
+<li><code>model</code>&#xFF1A;&#x8BBE;&#x5907;&#x5236;&#x9020;&#x5546;&#x7684;&#x63CF;&#x8FF0;&#xFF0C;&#x5982;&#x679C;&#x4E24;&#x5757;&#x677F;&#x5B50;compatible&#x76F8;&#x540C;&#x5C31;&#x7528;model&#x533A;&#x5206;</li>
+<li><code>compatible</code>&#xFF1A;&#x4E00;&#x4E2A;&#x7531;&quot;manufacture&#xFF0C;model&quot;&#x5B57;&#x7B26;&#x4E32;&#x7EC4;&#x6210;&#x7684;string list&#xFF0C;&#x7CFB;&#x7EDF;&#x6839;&#x636E;model&#x503C;&#x67E5;&#x627E;drivers</li>
+<li><code>phandle</code>&#xFF1A;&#x53D6;&#x503C;&#x5FC5;&#x987B;&#x552F;&#x4E00;&#xFF0C;&#x5728;&#x5176;&#x4ED6;dts&#x4E2D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;phandle&#x7684;&#x503C;&#x6765;&#x5F15;&#x7528;&#x8BE5;&#x8282;&#x70B9;</li>
+</ul>
+<h3 id="reg">reg</h3>
+<ul>
+<li><code>reg</code>&#xFF1A;&#x63CF;&#x8FF0;&#x8BBE;&#x5907;&#x5728;&#x5176;&#x7236;&#x603B;&#x7EBF;&#x5B9A;&#x4E49;&#x7684;&#x5730;&#x5740;&#x7A7A;&#x95F4;&#x4E2D;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x901A;&#x5E38;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5185;&#x5B58;&#x6620;&#x5C04;IO&#x5BC4;&#x5B58;&#x5668;&#x5757;&#x7684;&#x504F;&#x79FB;&#x91CF;&#x548C;&#x957F;&#x5EA6;</li>
+<li><code>#address-cells</code>&#xFF1A;&#x2018;#&#x2019;&#x4EE3;&#x8868;number&#xFF0C;&#x8868;&#x793A;&#x5B50;&#x8282;&#x70B9;&#x7684;reg&#x5C5E;&#x6027;&#x4E2D;&#x4F7F;&#x7528;&#x591A;&#x5C11;&#x4E2A;u32&#x6765;&#x63CF;&#x8FF0;&#x5730;&#x5740;</li>
+<li><code>#size-cells</code>&#xFF1A;&#x8868;&#x793A;&#x5B50;&#x8282;&#x70B9;&#x7684;reg&#x5C5E;&#x6027;&#x4E2D;&#x4F7F;&#x7528;&#x591A;&#x5C11;&#x4E2A;u32&#x6765;&#x63CF;&#x8FF0;&#x5730;&#x5740;&#x957F;&#x5EA6;</li>
+</ul>
+<p>&#x5047;&#x8BBE;64&#x4F4D;&#x7CFB;&#x7EDF;&#xFF0C;&#x5982;&#x679C;physical memory&#x5206;&#x6210;&#x4E24;&#x6BB5;&#xFF0C;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p>RAM: starting address 0x0, length 0x80000000 (2GB)
+RAM: starting address 0x100000000, length 0x100000000 (4GB)</p>
+</blockquote>
+<p>&#x90A3;&#x4E48;&#x7236;&#x8282;&#x70B9;#address-cells=<2>&#xFF0C;#size-cells<2>&#xFF0C;&#x4E24;&#x7AEF;&#x7269;&#x7406;&#x5185;&#x5B58;&#x8282;&#x70B9;&#x63CF;&#x8FF0;&#x5982;&#x4E0B;&#xFF1A;</2></2></p>
+<pre><code class="lang-c"><span class="hljs-comment">//&#x65B9;&#x6CD5;1&#xFF1A;</span>
+memory@<span class="hljs-number">0</span> {
+    device_type = <span class="hljs-string">&quot;memory&quot;</span>;
+    reg = &lt;<span class="hljs-number">0x000000000</span> <span class="hljs-number">0x00000000</span> <span class="hljs-number">0x00000000</span> <span class="hljs-number">0x80000000</span>
+              <span class="hljs-number">0x000000001</span> <span class="hljs-number">0x00000000</span> <span class="hljs-number">0x00000001</span> <span class="hljs-number">0x00000000</span>&gt;;
+};
+
+<span class="hljs-comment">//&#x65B9;&#x6CD5;2&#xFF1A;</span>
+memory@<span class="hljs-number">0</span> {
+    device_type = <span class="hljs-string">&quot;memory&quot;</span>;
+    reg = &lt;<span class="hljs-number">0x000000000</span> <span class="hljs-number">0x00000000</span> <span class="hljs-number">0x00000000</span> <span class="hljs-number">0x80000000</span>&gt;;
+};
+
+memory@<span class="hljs-number">100000000</span> {
+    device_type = <span class="hljs-string">&quot;memory&quot;</span>;
+    reg = &lt;<span class="hljs-number">0x000000001</span> <span class="hljs-number">0x00000000</span> <span class="hljs-number">0x00000001</span> <span class="hljs-number">0x00000000</span>&gt;;
+};
+</code></pre>
+<h3 id="&#x5F15;&#x7528;">&#x5F15;&#x7528;</h3>
+<h4 id="phandle&#x5F15;&#x7528;">phandle&#x5F15;&#x7528;</h4>
+<pre><code class="lang-c">pic@<span class="hljs-number">10000000</span> {
+    phandle = &lt;<span class="hljs-number">1</span>&gt;;
+    interrupt-controller;
+};
+another-device-node {
+    interrupt-parent = &lt;<span class="hljs-number">1</span>&gt;;   <span class="hljs-comment">// &#x4F7F;&#x7528;phandle&#x503C;&#x4E3A;1&#x6765;&#x5F15;&#x7528;&#x4E0A;&#x8FF0;&#x8282;&#x70B9;</span>
+};
+</code></pre>
+<p><strong>&#x4F7F;&#x7528;phandle&#x5F15;&#x7528;&#x9700;&#x8981;&#x786E;&#x4FDD;&#x8BBE;&#x5907;&#x6811;&#x6587;&#x4EF6;&#x4E2D;phandle&#x7684;&#x503C;&#x552F;&#x4E00;</strong></p>
+<h4 id="label&#x5F15;&#x7528;">label&#x5F15;&#x7528;</h4>
+<pre><code class="lang-c">PIC: pic@<span class="hljs-number">10000000</span> {
+    interrupt-controller;
+};
+another-device-node {
+    interrupt-parent = &lt;&amp;PIC&gt;;   <span class="hljs-comment">// &#x4F7F;&#x7528;label&#x6765;&#x5F15;&#x7528;&#x4E0A;&#x8FF0;&#x8282;&#x70B9;, </span>
+                                 <span class="hljs-comment">// &#x4F7F;&#x7528;lable&#x65F6;&#x5B9E;&#x9645;&#x4E0A;&#x4E5F;&#x662F;&#x4F7F;&#x7528;phandle&#x6765;&#x5F15;&#x7528;, </span>
+                                 <span class="hljs-comment">// &#x5728;&#x7F16;&#x8BD1;dts&#x6587;&#x4EF6;&#x4E3A;dtb&#x6587;&#x4EF6;&#x65F6;, &#x7F16;&#x8BD1;&#x5668;dtc&#x4F1A;&#x5728;dtb&#x4E2D;&#x63D2;&#x5165;phandle&#x5C5E;&#x6027;</span>
+};
+</code></pre>
+<p>dtc&#x5728;&#x7F16;&#x8BD1;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x5728;&#x4F7F;&#x7528;label&#x7684;&#x8282;&#x70B9;&#x4E2D;&#x589E;&#x52A0;&#x4E00;&#x4E2A;phandle&#x7684;&#x5C5E;&#x6027;&#xFF0C;<strong>&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x552F;&#x4E00;&#x7684;value</strong>&#xFF0C;&#x5E76;&#x628A;&#x4F7F;&#x7528;&#x5B83;&#x7684;&#x4F4D;&#x7F6E;&#x66FF;&#x6362;&#x4E3A;&#x8BE5;value&#x3002;</p>
+<h3 id="&#x8986;&#x76D6;">&#x8986;&#x76D6;</h3>
+<h4 id="1&#x540C;&#x4E00;&#x5C42;&#x6B21;&#x7684;&#x8282;&#x70B9;&#xFF0C;&#x540E;&#x9762;&#x7684;&#x4F1A;&#x8986;&#x76D6;&#x524D;&#x9762;&#x7684;&#x8282;&#x70B9;">1.&#x540C;&#x4E00;&#x5C42;&#x6B21;&#x7684;&#x8282;&#x70B9;&#xFF0C;&#x540E;&#x9762;&#x7684;&#x4F1A;&#x8986;&#x76D6;&#x524D;&#x9762;&#x7684;&#x8282;&#x70B9;</h4>
+<pre><code class="lang-c">    memory@<span class="hljs-number">30000000</span> {
+        device_type = <span class="hljs-string">&quot;memory&quot;</span>;
+        reg = &lt;<span class="hljs-number">0x30000000</span> <span class="hljs-number">0x20000000</span>&gt;;
+    };  
+    memory@<span class="hljs-number">30000000</span> {
+        reg = &lt;<span class="hljs-number">0x30000000</span> <span class="hljs-number">0x10000000</span>&gt;;
+    };
+</code></pre>
+<pre><code class="lang-c">     memory@<span class="hljs-number">30000000</span> {
+        device_type = <span class="hljs-string">&quot;memory&quot;</span>;
+        reg = &lt;<span class="hljs-number">0x30000000</span> <span class="hljs-number">0x10000000</span>&gt;;
+    };
+</code></pre>
+<p>dtc&#x7F16;&#x8BD1;&#x4E4B;&#x540E;reg&#x4F1A;&#x88AB;&#x8986;&#x76D6;&#x4E3A;<code>reg = &lt;0x30000000 0x10000000&gt;;</code></p>
+<h4 id="2&#x76F4;&#x63A5;&#x5F15;&#x7528;&#x65B9;&#x5F0F;&#x8986;&#x76D6;&#xFF08;&#x589E;&#x52A0;&#xFF09;&#x8282;&#x70B9;&#x5C5E;&#x6027;">2.&#x76F4;&#x63A5;&#x5F15;&#x7528;&#x65B9;&#x5F0F;&#x8986;&#x76D6;&#xFF08;&#x589E;&#x52A0;&#xFF09;&#x8282;&#x70B9;&#x5C5E;&#x6027;</h4>
+<pre><code class="lang-c"><span class="hljs-comment">//*.dtsi&#x4E2D;&#x7684;&#x8282;&#x70B9;</span>
+        xusbxti: oscillator@<span class="hljs-number">1</span> {
+                compatible = <span class="hljs-string">&quot;fixed-clock&quot;</span>;
+                reg = &lt;<span class="hljs-number">1</span>&gt;;
+                clock-frequency = &lt;<span class="hljs-number">0</span>&gt;;
+                clock-output-names = <span class="hljs-string">&quot;xusbxti&quot;</span>;
+                <span class="hljs-meta">#clock-cells = &lt;0&gt;;</span>
+            };
+</code></pre>
+<pre><code class="lang-c"><span class="hljs-comment">//&#x5F15;&#x7528;&#x4E0A;&#x8FF0;dtsi&#x4E2D;&#x7684;&#x8282;&#x70B9;</span>
+&amp;xusbxti {
+     clock-frequency = &lt;<span class="hljs-number">24000000</span>&gt;;
+}
+</code></pre>
+<p>&#x5728;&#x7F16;&#x8BD1;&#x8FC7;&#x540E;&#x8282;&#x70B9;&#x7684;<code>clock-frequency</code>&#x88AB;&#x66FF;&#x6362;&#x6210;<code>&lt;24000000&gt;</code></p>
+<h2 id="dtb">DTB</h2>
+<p><img src="DTB.png" alt="dt"></p>
+<h3 id="dtb&#x8D77;&#x59CB;&#x6BB5;">DTB&#x8D77;&#x59CB;&#x6BB5;</h3>
+<pre><code class="lang-c"><span class="hljs-keyword">struct</span> fdt_header {
+    <span class="hljs-keyword">uint32_t</span> magic;
+    <span class="hljs-keyword">uint32_t</span> totalsize;
+    <span class="hljs-keyword">uint32_t</span> off_dt_struct;
+    <span class="hljs-keyword">uint32_t</span> off_dt_strings;
+    <span class="hljs-keyword">uint32_t</span> off_mem_rsvmap;
+    <span class="hljs-keyword">uint32_t</span> version;
+    <span class="hljs-keyword">uint32_t</span> last_comp_version;
+    <span class="hljs-keyword">uint32_t</span> boot_cpuid_phys;
+    <span class="hljs-keyword">uint32_t</span> size_dt_strings;
+    <span class="hljs-keyword">uint32_t</span> size_dt_struct;
+};
+</code></pre>
+<ul>
+<li><strong><code>magic</code>&#xFF1A;</strong>&#x9B54;&#x6570;&#xFF0C;&#x6B64;&#x5B57;&#x6BB5;&#x5E94;&#x5305;&#x542B;&#x503C;<code>0xd00dfeed</code></li>
+<li><strong><code>totalsize</code>&#xFF1A;</strong>&#x6B64;&#x5B57;&#x6BB5;&#x5E94;&#x5305;&#x542B;device tree&#x6570;&#x636E;&#x7ED3;&#x6784;&#x7684;&#x603B;&#x5927;&#x5C0F;&#xFF08;&#x4EE5;&#x5B57;&#x8282;&#x4E3A;&#x5355;&#x4F4D;&#xFF09;&#xFF0C;&#x8FD9;&#x4E2A;&#x5927;&#x5C0F;&#x5305;&#x542B;&#x6240;&#x6709;&#x7ED3;&#x6784;&#x7684;&#x5404;&#x4E2A;&#x90E8;&#x5206;&#xFF1A;&#x6807;&#x9898;&#xFF0C;&#x5185;&#x5B58;&#x9884;&#x7559;&#x5757;&#xFF0C;&#x7ED3;&#x6784;&#x5757;&#x548C;&#x5B57;&#x7B26;&#x4E32;&#x5757;&#xFF0C;&#x4EE5;&#x53CA;&#x4EFB;&#x4F55;&#x5757;&#x4E4B;&#x95F4;&#x6216;&#x6700;&#x7EC8;&#x5757;&#x4E4B;&#x540E;&#x7684;&#x81EA;&#x7531;&#x7A7A;&#x95F4;&#x95F4;&#x9699;</li>
+<li><strong><code>off_dt_struct</code>&#xFF1A;</strong>&#x7ED3;&#x6784;&#x5757;&#x7684;&#x504F;&#x79FB;&#x91CF;</li>
+<li><strong><code>off_dt_strings</code>&#xFF1A;</strong>&#x5B57;&#x7B26;&#x4E32;&#x5757;&#x7684;&#x5B57;&#x8282;&#x504F;&#x79FB;&#x91CF;</li>
+<li><strong><code>off_mem_rsvmap</code>&#xFF1A;</strong>&#x5185;&#x5B58;&#x9884;&#x7559;&#x5757;&#x7684;&#x504F;&#x79FB;&#x91CF;&#xFF0C;<strong>&#x8FD9;&#x4E9B;&#x4FDD;&#x7559;&#x5185;&#x5B58;&#x4E0D;&#x4F1A;&#x8FDB;&#x5165;&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;</strong></li>
+<li><strong><code>version</code>&#xFF1A;</strong>&#x8BE5;dtb&#x7684;&#x7248;&#x672C;</li>
+<li><strong><code>last_comp_version</code>&#xFF1A;</strong>&#x517C;&#x5BB9;&#x7248;&#x672C;&#x4FE1;&#x606F;</li>
+<li><strong><code>boot_cpuid_phys</code>&#xFF1A;</strong>&#x8BE5;&#x5B57;&#x6BB5;&#x5E94;&#x5305;&#x542B;&#x7CFB;&#x7EDF;&#x5F15;&#x5BFC;CPU&#x7684;&#x7269;&#x7406;ID&#xFF0C;&#x5B83;&#x5E94;&#x8BE5;&#x4E0E;device tree&#x4E2D;&#x8BE5;CPU&#x8282;&#x70B9;&#x7684;reg&#x5C5E;&#x6027;&#x4E2D;&#x7ED9;&#x51FA;&#x7684;&#x7269;&#x7406;ID&#x76F8;&#x540C;</li>
+<li><strong><code>size_dt_strings</code>&#xFF1A;</strong>&#x6B64;&#x5B57;&#x6BB5;&#x5E94;&#x5305;&#x542B;device tree blob&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5757;&#x90E8;&#x5206;&#x7684;&#x5B57;&#x8282;&#x957F;&#x5EA6;</li>
+<li><strong><code>size_dt_struct</code>&#xFF1A;</strong>&#x6B64;&#x5B57;&#x6BB5;&#x5E94;&#x5305;&#x542B;device tree blob&#x7684;&#x7ED3;&#x6784;&#x5757;&#x90E8;&#x5206;&#x7684;&#x5B57;&#x8282;&#x957F;&#x5EA6;</li>
+</ul>
+<h3 id="&#x5185;&#x5B58;&#x9884;&#x7559;&#x6BB5;">&#x5185;&#x5B58;&#x9884;&#x7559;&#x6BB5;</h3>
+<p>reserve memory&#x63CF;&#x8FF0;&#x7B26;&#xFF1A;</p>
+<pre><code class="lang-c"><span class="hljs-keyword">struct</span> fdt_reserve_entry {
+    <span class="hljs-keyword">uint64_t</span> address;
+    <span class="hljs-keyword">uint64_t</span> size;
+};
+</code></pre>
+<h3 id="&#x7ED3;&#x6784;&#x5757;">&#x7ED3;&#x6784;&#x5757;</h3>
+<p>&#x63CF;&#x8FF0;&#x8BBE;&#x5907;&#x672C;&#x8EAB;&#x7684;&#x7ED3;&#x6784;&#x548C;&#x5185;&#x5BB9;&#xFF0C;&#x7531;&#x4E00;&#x7CFB;&#x5217;&#x4EE4;&#x724C;&#x7EC4;&#x6210;&#xFF0C;&#x8FD9;&#x4E9B;&#x4EE4;&#x724C;&#x88AB;&#x7EC4;&#x7EC7;&#x6210;&#x7EBF;&#x6027;&#x6811;&#x7ED3;&#x6784;&#x3002;</p>
+<h4 id="&#x4EE4;&#x724C;">&#x4EE4;&#x724C;</h4>
+<ul>
+<li><p><code>FDT_BEGIN_NODE(0x00000001)</code>&#xFF1A;&#x6807;&#x8BB0;&#x8282;&#x70B9;&#x7684;&#x5F00;&#x59CB;&#xFF0C;&#x540E;&#x63A5;&#x8282;&#x70B9;&#x7684;&#x5355;&#x5143;&#x540D;&#x79F0;&#xFF0C;&#x8BE5;&#x540D;&#x79F0;&#x5305;&#x62EC;&#x4EE5;&#x7A7A;&#x5B57;&#x7B26;&#x7ED3;&#x5C3E;&#x7684;&#x8282;&#x70B9;&#x540D;&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x5355;&#x5143;&#x5730;&#x5740;&#xFF08;&#x5982;&#x679C;&#x6709;&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x5BF9;&#x9F50;&#x5C31;&#x5C31;&#x586B;&#x5145;0x00&#xFF0C;&#x7136;&#x540E;&#x662F;&#x4E0B;&#x4E00;&#x4E2A;&#x4EE4;&#x724C;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x9664;&#x4E86;<code>FDT_END</code>&#x4E4B;&#x5916;&#x7684;&#x4EFB;&#x610F;&#x4EE4;&#x724C;</p>
+</li>
+<li><p><code>FDT_END_NODE(0x00000002)</code>&#xFF1A;&#x6807;&#x8BB0;&#x8282;&#x70B9;&#x7684;&#x7ED3;&#x675F;&#xFF0C;&#x63A5;<code>FDT_PROP</code>&#x4EE5;&#x5916;&#x7684;&#x4EFB;&#x610F;&#x4EE4;&#x724C;</p>
+</li>
+<li><p><code>FDT_PROP(0x00000003)</code>&#xFF1A;&#x8282;&#x70B9;&#x5C5E;&#x6027;&#x4EE4;&#x724C;&#xFF0C;&#x9996;&#x5148;&#x662F;&#x5C5E;&#x6027;&#x957F;&#x5EA6;&#xFF0C;&#x53EF;&#x4EE5;&#x4E3A;0&#x5B57;&#x8282;&#x8868;&#x793A;&#x7A7A;&#x5C5E;&#x6027;&#xFF1B;&#x7136;&#x540E;&#x662F;&#x5C5E;&#x6027;&#x540D;&#x5728;&#x5B57;&#x7B26;&#x4E32;&#x5757;&#x4E2D;&#x7684;&#x504F;&#x79FB;&#x91CF;&#xFF1B;&#x63A5;&#x7740;&#x5C5E;&#x6027;&#x503C;&#x5360;&#x5C5E;&#x6027;&#x957F;&#x5EA6;&#x4E2A;&#x5B57;&#x8282;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x5BF9;&#x9F50;&#x5C31;&#x586B;&#x5145;0x00&#xFF08;&#x5BF9;&#x9F50;&#x5230;32&#x4F4D;&#xFF09;&#xFF0C;&#x7136;&#x540E;&#x63A5;&#x9664;<code>FDT_END</code>&#x4EE5;&#x5916;&#x7684;&#x4EFB;&#x610F;&#x4EE4;&#x724C;</p>
+<pre><code class="lang-c"><span class="hljs-keyword">struct</span> {
+    <span class="hljs-keyword">uint32_t</span> len;
+    <span class="hljs-keyword">uint32_t</span> nameoff;
+}
+</code></pre>
+</li>
+</ul>
+<ul>
+<li><p><code>FDT_NOP(0x00000004)</code>&#xFF1A;&#x8986;&#x76D6;&#x4EE4;&#x724C;&#xFF0C;dtc&#x4E0D;&#x89E3;&#x6790;&#x8BE5;&#x4EE4;&#x724C;&#xFF0C;&#x76F4;&#x63A5;&#x8DF3;&#x5230;&#x4E0B;&#x4E00;&#x4E2A;&#x4EE4;&#x724C;&#x89E3;&#x6790;&#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x6B64;&#x4EE4;&#x724C;&#x540E;&#x7684;&#x6240;&#x6709;&#x5C5E;&#x6027;&#x6216;&#x8282;&#x70B9;&#x63CF;&#x8FF0;&#x90FD;&#x5C06;&#x5931;&#x6548;&#xFF0C;&#x4ECE;&#x6811;&#x4E2D;&#x79FB;&#x9664;&#x3002;</p>
+</li>
+<li><p><code>FDT_END(0x00000009)</code>&#xFF1A;&#x7ED3;&#x6784;&#x5757;&#x7684;&#x7ED3;&#x675F;</p>
+</li>
+</ul>
+<h3 id="&#x5B57;&#x7B26;&#x4E32;&#x5757;">&#x5B57;&#x7B26;&#x4E32;&#x5757;</h3>
+<p>&#x5305;&#x542B;&#x6811;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x6240;&#x6709;&#x5C5E;&#x6027;&#x540D;&#x79F0;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x8FD9;&#x4E9B;&#x7A7A;&#x7EC8;&#x6B62;&#x5B57;&#x7B26;&#x4E32;&#x5728;&#x672C;&#x8282;&#x4E2D;&#x7B80;&#x5355;&#x5730;&#x8FDE;&#x63A5;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x5B57;&#x7B26;&#x4E32;&#x5757;&#x4E2D;&#x7684;&#x504F;&#x79FB;&#x91CF;&#x4ECE;&#x7ED3;&#x6784;&#x5757;&#x4E2D;&#x5F15;&#x7528;&#x3002;<strong>&#x5B57;&#x7B26;&#x4E32;&#x5757;&#x6CA1;&#x6709;&#x5BF9;&#x9F50;&#x7EA6;&#x675F;&#xFF0C;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x5728;device tree blob&#x5F00;&#x5934;&#x7684;&#x4EFB;&#x4F55;&#x504F;&#x79FB;&#x5904;&#x3002;</strong></p>
+<h2 id="dtb&#x793A;&#x4F8B;">DTB&#x793A;&#x4F8B;</h2>
+<pre><code class="lang-c">/dts-v1/;
+/memreserve/ <span class="hljs-number">0x4ff00000</span> <span class="hljs-number">0x100000</span>;
+/ {
+    model = <span class="hljs-string">&quot;YIC System SMDKV210 based on S5PV210&quot;</span>;
+    compatible = <span class="hljs-string">&quot;yic,smdkv210&quot;</span>, <span class="hljs-string">&quot;samsung,s5pv210&quot;</span>;
+
+    <span class="hljs-meta">#address-cells = &lt;1&gt;;</span>
+    <span class="hljs-meta">#size-cells = &lt;1&gt;;</span>
+
+    chosen {
+        bootargs = <span class="hljs-string">&quot;console=ttySAC2,115200n8 root=/dev/nfs nfsroot=192.168.0.101:/home/run/work/rootfs/&quot;</span>;
+    };  
+
+    memory@<span class="hljs-number">30000000</span> {
+        device_type = <span class="hljs-string">&quot;memory&quot;</span>;
+        reg = &lt;<span class="hljs-number">0x30000000</span> <span class="hljs-number">0x20000000</span>&gt;;
+    };  
+};
+</code></pre>
+<p>&#x7F16;&#x8BD1;&#x540E;&#x7684;.dtb&#x6587;&#x4EF6;&#x4FE1;&#x606F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="dtb-sample.png" alt="img"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Gstreamer/Gstreamer.html" class="navigation navigation-next " aria-label="Next page: Gstreamer">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Device Tree","level":"2.1","depth":1,"next":{"title":"Gstreamer","level":"3.1","depth":1,"path":"Gstreamer/Gstreamer.md","ref":"Gstreamer/Gstreamer.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","back-to-top-button","expandable-chapters-small","code","-lunr","search-pro","github","emphasize","page-treeview","hide-element"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page-treeview":{"collapsed":false,"copyright":"Copyright &#169; aleen42","minHeaderCount":"2","minHeaderDeep":"6"},"emphasize":{},"github":{"url":"https://github.com/gesanqiu"},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"structure":{"readme":"EB5_intro.md"},"highlight":{},"back-to-top-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Ricardo Lu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Trantor","links":{"sidebar":{"Blog Page":"http://fzl123.top"}},"gitbook":"*"},"file":{"path":"Device_Tree/设备树.md","mtime":"2021-02-28T05:21:49.912Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-28T06:49:41.966Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

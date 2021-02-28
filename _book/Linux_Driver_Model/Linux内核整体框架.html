@@ -1,0 +1,584 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Linux 内核整体框架 · Trantor</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Ricardo Lu">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-treeview/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Kobject.html" />
+    
+    
+    <link rel="prev" href="../I2C/I2C通信协议.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://fzl123.top" target="_blank" class="custom-link">Blog Page</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Linux Device Tree</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../Device_Tree/设备树.html">
+            
+                <a href="../Device_Tree/设备树.html">
+            
+                    
+                    Device Tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Gstreamer</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../Gstreamer/Gstreamer.html">
+            
+                <a href="../Gstreamer/Gstreamer.html">
+            
+                    
+                    Gstreamer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">I2C</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../I2C/I2C通信协议.html">
+            
+                <a href="../I2C/I2C通信协议.html">
+            
+                    
+                    I2C Protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Linux Driver Model</li>
+        
+        
+    
+        <li class="chapter active" data-level="5.1" data-path="Linux内核整体框架.html">
+            
+                <a href="Linux内核整体框架.html">
+            
+                    
+                    Linux 内核整体框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="Kobject.html">
+            
+                <a href="Kobject.html">
+            
+                    
+                    KObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="Uevent.html">
+            
+                <a href="Uevent.html">
+            
+                    
+                    Uevent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="Review_of_the_Training.html">
+            
+                <a href="Review_of_the_Training.html">
+            
+                    
+                    A simple sample
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">OpenMAX</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../OpenMAX/OpenMAX概述.html">
+            
+                <a href="../OpenMAX/OpenMAX概述.html">
+            
+                    
+                    OpenMAX概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Others</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../RTSP&RTP&RTCP/RTSP&RTP&RTCP.html">
+            
+                <a href="../RTSP&RTP&RTCP/RTSP&RTP&RTCP.html">
+            
+                    
+                    RTP & RTCP & RTSP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Linux 内核整体框架</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div class="treeview__container"><ul>
+<li><div><a href="#linux&#x5185;&#x6838;&#x6574;&#x4F53;&#x6846;&#x67B6;">Linux&#x5185;&#x6838;&#x6574;&#x4F53;&#x6846;&#x67B6;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x6574;&#x4F53;&#x6846;&#x67B6;">&#x6574;&#x4F53;&#x6846;&#x67B6;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#process-scheduler">Process Scheduler</a><i></i></div></li>
+<li><div><a href="#memory-manage">Memory Manage</a><i></i></div></li>
+<li><div><a href="#virtual-file-system">Virtual File System</a><i></i></div></li>
+<li><div><a href="#net">NET</a><i></i></div></li>
+<li><div><a href="#inter-process-communication">Inter-Process Communication</a><i></i></div></li>
+<li><div><a href="#linux&#x5185;&#x6838;&#x76EE;&#x5F55;&#x542B;&#x4E49;">Linux&#x5185;&#x6838;&#x76EE;&#x5F55;&#x542B;&#x4E49;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x8BBE;&#x5907;&#x9A71;&#x52A8;&#x6A21;&#x578B;">&#x8BBE;&#x5907;&#x9A71;&#x52A8;&#x6A21;&#x578B;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#bus">Bus</a><i></i></div></li>
+<li><div><a href="#class">Class</a><i></i></div></li>
+<li><div><a href="#device">Device</a><i></i></div></li>
+<li><div><a href="#device-driver">Device Driver</a><i></i></div></li>
+<li><div><a href="#device-amp-device-driver">Device &amp; Device Driver</a><i></i></div></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+
+<h1 id="linux&#x5185;&#x6838;&#x6574;&#x4F53;&#x6846;&#x67B6;">Linux&#x5185;&#x6838;&#x6574;&#x4F53;&#x6846;&#x67B6;</h1>
+<h2 id="&#x6574;&#x4F53;&#x6846;&#x67B6;">&#x6574;&#x4F53;&#x6846;&#x67B6;</h2>
+<h3 id="process-scheduler">Process Scheduler</h3>
+<p>&#x8FDB;&#x7A0B;&#x8C03;&#x5EA6;&#xFF0C;&#x63D0;&#x4F9B;&#x5BF9;CPU&#x7684;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#xFF0C;&#x4E3B;&#x8981;&#x5305;&#x62EC;&#x4EE5;&#x4E0B;&#x56DB;&#x4E2A;&#x6A21;&#x5757;&#xFF1A;</p>
+<p><img src="Process Scheduler.gif" alt=""></p>
+<ul>
+<li><code>Scheduling Poliicy</code>&#xFF1A;&#x8FDB;&#x7A0B;&#x8C03;&#x5EA6;&#x7B56;&#x7565;&#xFF0C;&#x51B3;&#x5B9A;&#x80FD;&#x591F;&#x62E5;&#x6709;CPU&#x8D44;&#x6E90;&#x7684;&#x8FDB;&#x7A0B;</li>
+<li><code>Architecture-specific Schedulers</code>&#xFF1A;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;&#x76F8;&#x5173;&#x90E8;&#x5206;&#xFF0C;&#x7528;&#x4E8E;&#x5BF9;&#x4E0D;&#x540C;&#x7684;CPU&#x7684;&#x63A7;&#x5236;&#xFF0C;&#x5B9E;&#x9645;&#x4E0E;CPU&#x76F8;&#x8FDE;&#x7684;&#x90E8;&#x5206;</li>
+<li><code>Architecture-independent Scheduler</code>&#xFF1A;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;&#x65E0;&#x5173;&#x90E8;&#x5206;&#xFF0C;&#x4E0E;Scheduling Policy&#x5171;&#x540C;&#x51B3;&#x5B9A;&#x8981;&#x6267;&#x884C;&#x7684;&#x8FDB;&#x7A0B;&#xFF0C;&#x7136;&#x540E;&#x4F20;&#x7ED9;Architecture-specific Scheduler&#x6765;resume&#x5236;&#x5B9A;&#x8FDB;&#x7A0B;</li>
+<li><code>System Call Interface</code>&#xFF1A;&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x63A5;&#x53E3;&#xFF0C;&#x4E3A;&#x7528;&#x6237;&#x7A7A;&#x95F4;&#x7684;&#x64CD;&#x4F5C;&#x63D0;&#x4F9B;&#x63A5;&#x53E3;</li>
+</ul>
+<h3 id="memory-manage">Memory Manage</h3>
+<p>&#x63D0;&#x4F9B;&#x5BF9;&#x5185;&#x5B58;&#x8D44;&#x6E90;&#x7684;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x3002;Linux&#x5185;&#x6838;&#x63D0;&#x4F9B;&#x865A;&#x62DF;&#x5185;&#x5B58;&#x673A;&#x5236;&#xFF0C;&#x4EE5;&#x8FDB;&#x7A0B;&#x4E3A;&#x5355;&#x4F4D;&#xFF0C;&#x5C06;&#x8FDB;&#x7A0B;&#x4F7F;&#x7528;&#x7684;&#x865A;&#x62DF;&#x5185;&#x5B58;&#x6620;&#x5C04;&#x5230;&#x5B9E;&#x9645;&#x7684;&#x786C;&#x4EF6;&#x7269;&#x7406;&#x5185;&#x5B58;&#x4E0A;&#xFF0C;&#x4EE5;&#x6269;&#x5927;&#x8FDB;&#x7A0B;&#x80FD;&#x591F;&#x8C03;&#x7528;&#x7684;&#x5185;&#x5B58;&#x8D44;&#x6E90;&#x3002;</p>
+<p><img src="Memory Manage.gif" alt=""></p>
+<ul>
+<li><p><code>Architecture Specific Managers</code>&#xFF1A;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;&#x76F8;&#x5173;&#x90E8;&#x5206;&#x3002;&#x63D0;&#x4F9B;&#x7528;&#x4E8E;&#x8BBF;&#x95EE;&#x786C;&#x4EF6;Memory&#x7684;&#x865A;&#x62DF;&#x63A5;&#x53E3;&#x3002;</p>
+</li>
+<li><p><code>Architecture Independent Manager</code>&#xFF1A;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;&#x65E0;&#x5173;&#x90E8;&#x5206;&#x3002;&#x63D0;&#x4F9B;&#x6240;&#x6709;&#x7684;&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x673A;&#x5236;&#xFF0C;&#x5305;&#x62EC;&#xFF1A;&#x4EE5;&#x8FDB;&#x7A0B;&#x4E3A;&#x5355;&#x4F4D;&#x7684;memory mapping&#xFF1B;&#x865A;&#x62DF;&#x5185;&#x5B58;&#x7684;Swapping&#x3002;</p>
+</li>
+<li><p><code>System Call Interface</code>&#xFF1A;&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x63A5;&#x53E3;&#x3002;&#x901A;&#x8FC7;&#x8BE5;&#x63A5;&#x53E3;&#xFF0C;&#x5411;&#x7528;&#x6237;&#x7A7A;&#x95F4;&#x7A0B;&#x5E8F;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x63D0;&#x4F9B;&#x5185;&#x5B58;&#x7684;&#x5206;&#x914D;&#x3001;&#x91CA;&#x653E;&#xFF0C;&#x6587;&#x4EF6;&#x7684;map&#x7B49;&#x529F;&#x80FD;&#x3002;</p>
+</li>
+</ul>
+<h3 id="virtual-file-system">Virtual File System</h3>
+<p>VFS&#x5C06;&#x4E0D;&#x540C;&#x529F;&#x80FD;&#x7684;&#x5916;&#x90E8;&#x8BBE;&#x5907;&#x62BD;&#x8C61;&#x6210;&#x6587;&#x4EF6;&#xFF0C;&#x901A;&#x8FC7;&#x7EDF;&#x4E00;&#x7684;&#x6587;&#x4EF6;&#x64CD;&#x4F5C;&#x63A5;&#x53E3;&#xFF08;Device Driver&#xFF09;&#x6765;&#x8BBF;&#x95EE;&#x3002;</p>
+<p><img src="VFS.gif" alt="vfs"></p>
+<ul>
+<li><p><code>Device Drivers</code>&#xFF1A;&#x8BBE;&#x5907;&#x9A71;&#x52A8;&#xFF0C;&#x7528;&#x4E8E;&#x63A7;&#x5236;&#x6240;&#x6709;&#x7684;&#x5916;&#x90E8;&#x8BBE;&#x5907;&#x53CA;&#x63A7;&#x5236;&#x5668;&#x3002;</p>
+</li>
+<li><p><code>Device Independent Interface</code>&#xFF1A;&#x8BE5;&#x6A21;&#x5757;&#x5B9A;&#x4E49;&#x4E86;&#x63CF;&#x8FF0;&#x786C;&#x4EF6;&#x8BBE;&#x5907;&#x7684;&#x7EDF;&#x4E00;&#x65B9;&#x5F0F;&#xFF08;&#x7EDF;&#x4E00;&#x8BBE;&#x5907;&#x6A21;&#x578B;&#xFF09;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x8BBE;&#x5907;&#x9A71;&#x52A8;&#x90FD;&#x9075;&#x5B88;&#x8FD9;&#x4E2A;&#x5B9A;&#x4E49;&#xFF0C;&#x53EF;&#x4EE5;&#x964D;&#x4F4E;&#x5F00;&#x53D1;&#x7684;&#x96BE;&#x5EA6;&#x3002;&#x540C;&#x65F6;&#x53EF;&#x4EE5;&#x7528;&#x4E00;&#x81F4;&#x7684;&#x5F62;&#x5F0F;&#x5411;&#x4E0A;&#x63D0;&#x4F9B;&#x63A5;&#x53E3;&#x3002;</p>
+</li>
+<li><p><code>Logical Systems</code>&#xFF1A;&#x6BCF;&#x4E00;&#x79CD;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF0C;&#x90FD;&#x4F1A;&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;Logical System&#xFF08;&#x903B;&#x8F91;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF09;&#xFF0C;&#x5B83;&#x4F1A;&#x5B9E;&#x73B0;&#x5177;&#x4F53;&#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x903B;&#x8F91;&#x3002;</p>
+</li>
+<li><p><code>System Independent Interface</code>&#xFF1A;&#x8BE5;&#x6A21;&#x5757;&#x8D1F;&#x8D23;&#x4EE5;&#x7EDF;&#x4E00;&#x7684;&#x63A5;&#x53E3;&#xFF08;&#x5757;&#x8BBE;&#x5907;&#x548C;&#x5B57;&#x7B26;&#x8BBE;&#x5907;&#xFF09;&#x8868;&#x793A;&#x786C;&#x4EF6;&#x8BBE;&#x5907;&#x548C;&#x903B;&#x8F91;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF0C;&#x8FD9;&#x6837;&#x4E0A;&#x5C42;&#x8F6F;&#x4EF6;&#x5C31;&#x4E0D;&#x518D;&#x5173;&#x5FC3;&#x5177;&#x4F53;&#x7684;&#x786C;&#x4EF6;&#x5F62;&#x6001;&#x4E86;&#x3002;</p>
+</li>
+<li><p><code>System Call Interface</code>&#xFF1A;&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x63A5;&#x53E3;&#xFF0C;&#x5411;&#x7528;&#x6237;&#x7A7A;&#x95F4;&#x63D0;&#x4F9B;&#x8BBF;&#x95EE;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x548C;&#x786C;&#x4EF6;&#x8BBE;&#x5907;&#x7684;&#x7EDF;&#x4E00;&#x7684;&#x63A5;&#x53E3;&#x3002;</p>
+</li>
+</ul>
+<h3 id="net">NET</h3>
+<p>&#x8D1F;&#x8D23;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x7684;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&#xFF0C;&#x5E76;&#x5B9E;&#x73B0;&#x591A;&#x79CD;&#x591A;&#x6837;&#x7684;&#x7F51;&#x7EDC;&#x6807;&#x51C6;&#x3002;&#x7F51;&#x5361;&#x4F5C;&#x4E3A;&#x5916;&#x90E8;&#x8BBE;&#x5907;&#xFF0C;&#x6309;&#x7167;Linux&#x201C;&#x4E00;&#x5207;&#x7686;&#x6587;&#x4EF6;&#x201D;&#x7684;&#x8BBE;&#x8BA1;&#x601D;&#x60F3;&#xFF0C;NET&#x4E5F;&#x5E94;&#x8BE5;&#x8BBE;&#x8BA1;&#x6210;&#x6587;&#x4EF6;&#x63A5;&#x53E3;&#xFF0C;&#x4E8B;&#x5B9E;&#x4E0A;NET&#x5B50;&#x7CFB;&#x7EDF;&#x7684;&#x8BBE;&#x8BA1;&#x4E5F;&#x4E0E;VFS&#x7C7B;&#x4F3C;&#xFF0C;&#x4F46;&#x662F;&#x7531;&#x4E8E;&#x7F51;&#x7EDC;&#x534F;&#x8BAE;&#x7684;&#x8BBE;&#x8BA1;&#x548C;&#x591A;&#x6837;&#x6027;&#xFF0C;&#x7CFB;&#x7EDF;&#x4E3A;&#x4E86;&#x9690;&#x53BB;&#x8BBE;&#x5907;&#x7684;&#x5B9E;&#x73B0;&#x7EC6;&#x8282;&#x65B9;&#x4FBF;&#x7528;&#x6237;&#x64CD;&#x4F5C;&#x5C06;&#x5176;&#x5355;&#x72EC;&#x5212;&#x5206;&#x6210;&#x4E00;&#x4E2A;&#x90E8;&#x5206;&#xFF08;&#x56E0;&#x6B64;Linux&#x4E5F;&#x4E0D;&#x5B8C;&#x5168;&#x662F;&#x201C;&#x6587;&#x4EF6;&#x201D;&#xFF09;&#x3002;</p>
+<p><img src="NET.gif" alt="net"></p>
+<ul>
+<li><p><code>Network Device Drivers</code>&#xFF1A;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&#x7684;&#x9A71;&#x52A8;&#xFF0C;&#x548C;VFS&#x5B50;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x8BBE;&#x5907;&#x9A71;&#x52A8;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;</p>
+</li>
+<li><p><code>Device Independent Interface</code>&#xFF1A;&#x548C;VFS&#x5B50;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;</p>
+</li>
+<li><p><code>Network Protocols</code>&#xFF1A;&#x5B9E;&#x73B0;&#x5404;&#x79CD;&#x7F51;&#x7EDC;&#x4F20;&#x8F93;&#x534F;&#x8BAE;&#xFF0C;&#x4F8B;&#x5982;IP, TCP, UDP&#x7B49;&#x7B49;&#x3002;</p>
+</li>
+<li><p><code>Protocol Independent Interface</code>&#xFF1A;&#x5C4F;&#x853D;&#x4E0D;&#x540C;&#x7684;&#x786C;&#x4EF6;&#x8BBE;&#x5907;&#x548C;&#x7F51;&#x7EDC;&#x534F;&#x8BAE;&#xFF0C;&#x4EE5;&#x76F8;&#x540C;&#x7684;&#x683C;&#x5F0F;&#x63D0;&#x4F9B;&#x63A5;&#x53E3;&#xFF08;socket)&#x3002;</p>
+</li>
+<li><p><code>System Call interface</code>&#xFF1A;&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x63A5;&#x53E3;&#xFF0C;&#x5411;&#x7528;&#x6237;&#x7A7A;&#x95F4;&#x63D0;&#x4F9B;&#x8BBF;&#x95EE;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&#x7684;&#x7EDF;&#x4E00;&#x7684;&#x63A5;&#x53E3;&#x3002;</p>
+</li>
+</ul>
+<h3 id="inter-process-communication">Inter-Process Communication</h3>
+<p>&#x8FDB;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;</p>
+<h3 id="linux&#x5185;&#x6838;&#x76EE;&#x5F55;&#x542B;&#x4E49;">Linux&#x5185;&#x6838;&#x76EE;&#x5F55;&#x542B;&#x4E49;</h3>
+<pre><code class="lang-c">include/        ---- &#x5185;&#x6838;&#x5934;&#x6587;&#x4EF6;&#xFF0C;&#x9700;&#x8981;&#x63D0;&#x4F9B;&#x7ED9;&#x5916;&#x90E8;&#x6A21;&#x5757;&#xFF08;&#x4F8B;&#x5982;&#x7528;&#x6237;&#x7A7A;&#x95F4;&#x4EE3;&#x7801;&#xFF09;&#x4F7F;&#x7528;&#x3002;
+
+kernel/         ---- Linux&#x5185;&#x6838;&#x7684;&#x6838;&#x5FC3;&#x4EE3;&#x7801;&#xFF0C;&#x5305;&#x542B;&#x4E86;<span class="hljs-number">3.2</span>&#x5C0F;&#x8282;&#x6240;&#x63CF;&#x8FF0;&#x7684;&#x8FDB;&#x7A0B;&#x8C03;&#x5EA6;&#x5B50;&#x7CFB;&#x7EDF;&#xFF0C;&#x4EE5;&#x53CA;&#x548C;&#x8FDB;&#x7A0B;&#x8C03;&#x5EA6;&#x76F8;&#x5173;&#x7684;&#x6A21;&#x5757;&#x3002;
+
+mm/             ---- &#x5185;&#x5B58;&#x7BA1;&#x7406;&#x5B50;&#x7CFB;&#x7EDF;&#xFF08;<span class="hljs-number">3.3</span>&#x5C0F;&#x8282;&#xFF09;&#x3002;
+
+fs/             ---- VFS&#x5B50;&#x7CFB;&#x7EDF;&#xFF08;<span class="hljs-number">3.4</span>&#x5C0F;&#x8282;&#xFF09;&#x3002;
+
+net/            ---- &#x4E0D;&#x5305;&#x62EC;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&#x9A71;&#x52A8;&#x7684;&#x7F51;&#x7EDC;&#x5B50;&#x7CFB;&#x7EDF;&#xFF08;<span class="hljs-number">3.5</span>&#x5C0F;&#x8282;&#xFF09;&#x3002;
+
+ipc/            ---- IPC&#xFF08;&#x8FDB;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;&#xFF09;&#x5B50;&#x7CFB;&#x7EDF;&#x3002;
+
+arch/          ---- &#x4F53;&#x7CFB;&#x7ED3;&#x6784;&#x76F8;&#x5173;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x4F8B;&#x5982;arm, x86&#x7B49;&#x7B49;&#x3002; 
+arch/mach      ---- &#x5177;&#x4F53;&#x7684;machine/board&#x76F8;&#x5173;&#x7684;&#x4EE3;&#x7801;&#x3002; 
+arch/include/<span class="hljs-keyword">asm</span> ---- &#x4F53;&#x7CFB;&#x7ED3;&#x6784;&#x76F8;&#x5173;&#x7684;&#x5934;&#x6587;&#x4EF6;&#x3002; 
+arch/boot/dts  ---- &#x8BBE;&#x5907;&#x6811;&#xFF08;Device Tree&#xFF09;&#x6587;&#x4EF6;&#x3002;
+
+init/           ---- Linux&#x7CFB;&#x7EDF;&#x542F;&#x52A8;&#x521D;&#x59CB;&#x5316;&#x76F8;&#x5173;&#x7684;&#x4EE3;&#x7801;&#x3002; 
+block/          ---- &#x63D0;&#x4F9B;&#x5757;&#x8BBE;&#x5907;&#x7684;&#x5C42;&#x6B21;&#x3002; 
+sound/          ---- &#x97F3;&#x9891;&#x76F8;&#x5173;&#x7684;&#x9A71;&#x52A8;&#x53CA;&#x5B50;&#x7CFB;&#x7EDF;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x4F5C;&#x201C;&#x97F3;&#x9891;&#x5B50;&#x7CFB;&#x7EDF;&#x201D;&#x3002; 
+drivers/        ---- &#x8BBE;&#x5907;&#x9A71;&#x52A8;&#xFF08;&#x5728;Linux kernel <span class="hljs-number">3.10</span>&#x4E2D;&#xFF0C;&#x8BBE;&#x5907;&#x9A71;&#x52A8;&#x5360;&#x4E86;<span class="hljs-number">49.4</span>&#x7684;&#x4EE3;&#x7801;&#x91CF;&#xFF09;&#x3002;
+
+lib/            ---- &#x5B9E;&#x73B0;&#x9700;&#x8981;&#x5728;&#x5185;&#x6838;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x5E93;&#x51FD;&#x6570;&#xFF0C;&#x4F8B;&#x5982;CRC&#x3001;FIFO&#x3001;<span class="hljs-built_in">list</span>&#x3001;MD5&#x7B49;&#x3002; 
+crypto/         ----- &#x52A0;&#x5BC6;&#x3001;&#x89E3;&#x5BC6;&#x76F8;&#x5173;&#x7684;&#x5E93;&#x51FD;&#x6570;&#x3002; 
+security/       ---- &#x63D0;&#x4F9B;&#x5B89;&#x5168;&#x7279;&#x6027;&#xFF08;SELinux&#xFF09;&#x3002; 
+virt/           ---- &#x63D0;&#x4F9B;&#x865A;&#x62DF;&#x673A;&#x6280;&#x672F;&#xFF08;KVM&#x7B49;&#xFF09;&#x7684;&#x652F;&#x6301;&#x3002; 
+usr/            ---- &#x7528;&#x4E8E;&#x751F;&#x6210;initramfs&#x7684;&#x4EE3;&#x7801;&#x3002; 
+firmware/       ---- &#x4FDD;&#x5B58;&#x7528;&#x4E8E;&#x9A71;&#x52A8;&#x7B2C;&#x4E09;&#x65B9;&#x8BBE;&#x5907;&#x7684;&#x56FA;&#x4EF6;&#x3002;
+
+samples/        ---- &#x4E00;&#x4E9B;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x3002; 
+tools/          ---- &#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x5DE5;&#x5177;&#xFF0C;&#x5982;&#x6027;&#x80FD;&#x5256;&#x6790;&#x3001;&#x81EA;&#x6D4B;&#x8BD5;&#x7B49;&#x3002;
+
+Kconfig, Kbuild, Makefile, scripts/ ---- &#x7528;&#x4E8E;&#x5185;&#x6838;&#x7F16;&#x8BD1;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x3001;&#x811A;&#x672C;&#x7B49;&#x3002;
+
+COPYING         ---- &#x7248;&#x6743;&#x58F0;&#x660E;&#x3002; 
+MAINTAINERS     ----&#x7EF4;&#x62A4;&#x8005;&#x540D;&#x5355;&#x3002; 
+CREDITS         ---- Linux&#x4E3B;&#x8981;&#x7684;&#x8D21;&#x732E;&#x8005;&#x540D;&#x5355;&#x3002; 
+REPORTING-BUGS  ---- Bug&#x4E0A;&#x62A5;&#x7684;&#x6307;&#x5357;&#x3002;
+
+Documentation, README ---- &#x5E2E;&#x52A9;&#x3001;&#x8BF4;&#x660E;&#x6587;&#x6863;&#x3002;
+</code></pre>
+<h2 id="&#x8BBE;&#x5907;&#x9A71;&#x52A8;&#x6A21;&#x578B;">&#x8BBE;&#x5907;&#x9A71;&#x52A8;&#x6A21;&#x578B;</h2>
+<h3 id="bus">Bus</h3>
+<blockquote>
+<p> A bus is a channel between the processor and one or more devices. For the purposes of the device model, all devices are connected via a bus, even if it is an internal, virtual, &quot;platform&quot; bus. Buses can plug into each other. A USB controller is usually a PCI device, for example. The device model represents the actual connections between buses and the devices they control. A bus is represented by the bus_type structure. It contains the name, the default attributes, the bus&apos; methods, PM operations, and the driver core&apos;s private data.</p>
+</blockquote>
+<ul>
+<li><p>&#x603B;&#x7EBF;&#x662F;CPU&#x548C;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x8BBE;&#x5907;&#x4E4B;&#x95F4;&#x4FE1;&#x606F;&#x4EA4;&#x4E92;&#x7684;&#x901A;&#x9053;</p>
+</li>
+<li><p>&#x603B;&#x7EBF;&#x53EF;&#x4EE5;&#x4E92;&#x76F8;&#x5D4C;&#x5957;</p>
+</li>
+</ul>
+<h3 id="class">Class</h3>
+<blockquote>
+<p>A class is a higher-level view of a device that abstracts out low-level implementation details. Drivers may see a SCSI disk or an ATA disk, but, at the class level, they are all simply disks. Classes allow user space to work with devices based on what they do, rather than how thet are connected or how they work.</p>
+</blockquote>
+<p>class&#x4E0E;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x4E2D;&#x7684;class&#x76F8;&#x4F3C;&#xFF0C;&#x96C6;&#x5408;&#x5177;&#x6709;&#x76F8;&#x4F3C;&#x529F;&#x80FD;&#x6216;&#x5C5E;&#x6027;&#x7684;&#x8BBE;&#x5907;&#xFF0C;&#x62BD;&#x8C61;&#x51FA;&#x4E00;&#x5957;&#x5728;&#x591A;&#x4E2A;&#x8BBE;&#x5907;&#x4E4B;&#x95F4;&#x5171;&#x7528;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x63A5;&#x53E3;&#x51FD;&#x6570;&#xFF0C;&#x5BF9;&#x7528;&#x6237;&#x7A7A;&#x95F4;&#x9690;&#x53BB;&#x5B9E;&#x73B0;&#x7EC6;&#x8282;&#xFF0C;&#x51CF;&#x5C11;&#x91CD;&#x590D;&#x52B3;&#x52A8;&#x3002;</p>
+<h3 id="device">Device</h3>
+<blockquote>
+<p>At the lowest level, every device in a Linux system is represented by an instance of struct device. The device structure contains the information that the device model core needs to model the system. Most subsystems, however, track additional information about the devices they host. As a result, it is rare for devices to be represented by bare device structures; instead, that structure, like kobject structures, is usually embedded within a higher-level representation of the device.</p>
+</blockquote>
+<p>&#x62BD;&#x8C61;&#x8BBE;&#x5907;&#x7684;&#x5404;&#x79CD;&#x5C5E;&#x6027;&#x4EE5;&#x4FBF;&#x4E8E;&#x8BA1;&#x7B97;&#x673A;&#x8BC6;&#x522B;&#x8BBE;&#x5907;</p>
+<h3 id="device-driver">Device Driver</h3>
+<blockquote>
+<p><strong>The device driver-model tracks all of the drivers known to the system.</strong></p>
+<p>The main reason for this tracking is to enable the driver core to match up drivers with new devices. Once drivers are known objects within the system, however, a number of other things become possible. Device drivers can export information and configuration variables that are independent of any specific device.</p>
+</blockquote>
+<p>&#x62BD;&#x8C61;&#x786C;&#x4EF6;&#x8BBE;&#x5907;&#x7684;&#x9A71;&#x52A8;&#x7A0B;&#x5E8F;&#x4E3A;&#x7528;&#x6237;&#x7A7A;&#x95F4;&#x63D0;&#x4F9B;&#x5BF9;&#x8BBE;&#x5907;&#x7684;&#x76F8;&#x5173;&#x64CD;&#x4F5C;</p>
+<h3 id="device--device-driver">Device &amp; Device Driver</h3>
+<ul>
+<li>Device&#x63CF;&#x8FF0;&#x8BBE;&#x5907;&#x201C;&#x6709;&#x4EC0;&#x4E48;&#x7528;&#x201D;</li>
+<li><p>Driver&#x63CF;&#x8FF0;&#x201C;&#x600E;&#x4E48;&#x53BB;&#x7528;&#x8BBE;&#x5907;&#x201D;</p>
+</li>
+<li><p>&#x8BBE;&#x5907;&#x9A71;&#x52A8;&#x6A21;&#x578B;&#x4E00;&#x76F4;&#x904D;&#x5386;&#x7CFB;&#x7EDF;&#x4E2D;&#x6240;&#x6709;&#x7684;&#x9A71;&#x52A8;&#xFF0C;&#x5F53;&#x6CA1;&#x6709;Device&#x6CE8;&#x518C;&#x65F6;&#xFF0C;&#x5BF9;&#x5E94;&#x7684;Device Driver&#x4E0D;&#x6267;&#x884C;&#x521D;&#x59CB;&#x5316;&#x64CD;&#x4F5C;&#xFF0C;&#x4E00;&#x65E6;&#x6709;&#x65B0;&#x7684;Device&#x6CE8;&#x518C;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x662F;&#x6839;&#x636E;&#x540D;&#x5B57;&#x8FDB;&#x884C;match&#xFF0C;&#x5982;&#x679C;&#x540D;&#x5B57;&#x76F8;&#x540C;&#x5C31;&#x6267;&#x884C;Device Driver&#x4E2D;&#x7684;&#x521D;&#x59CB;&#x5316;&#x51FD;&#x6570;&#xFF08;probe&#xFF09;&#xFF0C;&#x521D;&#x59CB;&#x5316;&#x8BBE;&#x5907;&#x4F7F;&#x5176;&#x4E3A;&#x53EF;&#x7528;&#x72B6;&#x6001;&#x3002;</p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../I2C/I2C通信协议.html" class="navigation navigation-prev " aria-label="Previous page: I2C Protocol">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Kobject.html" class="navigation navigation-next " aria-label="Next page: KObject">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Linux 内核整体框架","level":"5.1","depth":1,"next":{"title":"KObject","level":"5.2","depth":1,"path":"Linux_Driver_Model/Kobject.md","ref":"Linux_Driver_Model/Kobject.md","articles":[]},"previous":{"title":"I2C Protocol","level":"4.1","depth":1,"path":"I2C/I2C通信协议.md","ref":"I2C/I2C通信协议.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","back-to-top-button","expandable-chapters-small","code","-lunr","search-pro","github","emphasize","page-treeview","hide-element"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page-treeview":{"collapsed":false,"copyright":"Copyright &#169; aleen42","minHeaderCount":"2","minHeaderDeep":"6"},"emphasize":{},"github":{"url":"https://github.com/gesanqiu"},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"structure":{"readme":"EB5_intro.md"},"highlight":{},"back-to-top-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Ricardo Lu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Trantor","links":{"sidebar":{"Blog Page":"http://fzl123.top"}},"gitbook":"*"},"file":{"path":"Linux_Driver_Model/Linux内核整体框架.md","mtime":"2021-02-28T05:18:25.920Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-28T06:49:41.966Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
