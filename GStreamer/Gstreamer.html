@@ -1,0 +1,630 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Gstreamer · Trantor</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Ricardo Lu">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-treeview/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../I2C/I2C通信协议.html" />
+    
+    
+    <link rel="prev" href="../Device_Tree/设备树.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://fzl123.top" target="_blank" class="custom-link">Blog Page</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Linux Device Tree</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../Device_Tree/设备树.html">
+            
+                <a href="../Device_Tree/设备树.html">
+            
+                    
+                    Device Tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Gstreamer</li>
+        
+        
+    
+        <li class="chapter active" data-level="3.1" data-path="Gstreamer.html">
+            
+                <a href="Gstreamer.html">
+            
+                    
+                    Gstreamer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">I2C</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../I2C/I2C通信协议.html">
+            
+                <a href="../I2C/I2C通信协议.html">
+            
+                    
+                    I2C Protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Linux Driver Model</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../Linux_Driver_Model/Linux内核整体框架.html">
+            
+                <a href="../Linux_Driver_Model/Linux内核整体框架.html">
+            
+                    
+                    Linux 内核整体框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../Linux_Driver_Model/Kobject.html">
+            
+                <a href="../Linux_Driver_Model/Kobject.html">
+            
+                    
+                    KObject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../Linux_Driver_Model/Uevent.html">
+            
+                <a href="../Linux_Driver_Model/Uevent.html">
+            
+                    
+                    Uevent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../Linux_Driver_Model/Review_of_the_Training.html">
+            
+                <a href="../Linux_Driver_Model/Review_of_the_Training.html">
+            
+                    
+                    A simple sample
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">OpenMAX</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../OpenMAX/OpenMAX概述.html">
+            
+                <a href="../OpenMAX/OpenMAX概述.html">
+            
+                    
+                    OpenMAX概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Others</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../RTSP&RTP&RTCP/RTSP&RTP&RTCP.html">
+            
+                <a href="../RTSP&RTP&RTCP/RTSP&RTP&RTCP.html">
+            
+                    
+                    RTP & RTCP & RTSP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Gstreamer</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div class="treeview__container"><ul>
+<li><div><a href="#&#x67B6;&#x6784;">&#x67B6;&#x6784;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#media-applications">Media Applications</a><i></i></div></li>
+<li><div><a href="#core-framework">Core Framework</a><i></i></div></li>
+<li><div><a href="#plugins">Plugins</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#gstreamer&#x7EC4;&#x4EF6;">GStreamer&#x7EC4;&#x4EF6;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#element">Element</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x521B;&#x5EFA;&#x4E00;&#x4E2A;gstelement">&#x521B;&#x5EFA;&#x4E00;&#x4E2A;GstElement</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x7BB1;&#x67DC;bin">&#x7BB1;&#x67DC;bin</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x521B;&#x5EFA;&#x4E00;&#x4E2A;bin">&#x521B;&#x5EFA;&#x4E00;&#x4E2A;bin</a><i></i></div></li>
+<li><div><a href="#&#x5E38;&#x7528;&#x64CD;&#x4F5C;">&#x5E38;&#x7528;&#x64CD;&#x4F5C;</a><i></i></div></li>
+<li><div><a href="#&#x5143;&#x4EF6;&#x7684;&#x72B6;&#x6001;">&#x5143;&#x4EF6;&#x7684;&#x72B6;&#x6001;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x886C;&#x57AB;pad">&#x886C;&#x57AB;Pad</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#pad-link">Pad link</a><i></i></div></li>
+<li><div><a href="#pad-capability">Pad Capability</a><i></i></div></li>
+<li><div><a href="#pad-capability-for-filtering">Pad Capability for Filtering</a><i></i></div></li>
+<li><div><a href="#ghost-pad">Ghost Pad</a><i></i></div></li>
+<li><div><a href="#&#x52A8;&#x6001;&#x886C;&#x57AB;-dynamic-pads">&#x52A8;&#x6001;&#x886C;&#x57AB; Dynamic pads</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#bus">Bus</a><i></i></div></li>
+<li><div><a href="#gstreamer&#x6570;&#x636E;&#x6D88;&#x606F;&#x4EA4;&#x4E92;">Gstreamer&#x6570;&#x636E;&#x6D88;&#x606F;&#x4EA4;&#x4E92;</a><i></i></div></li>
+</ul></li>
+</ul>
+</div>
+
+<h1 id="gstreamer">GStreamer</h1>
+<h2 id="&#x67B6;&#x6784;">&#x67B6;&#x6784;</h2>
+<p><img src="&#x6846;&#x67B6;.png" alt="GStreamer&#x6846;&#x67B6;&#x56FE;"></p>
+<h3 id="media-applications">Media Applications</h3>
+<p>&#x5E94;&#x7528;&#x5C42;&#xFF0C;&#x5305;&#x62EC;gstreamer&#x81EA;&#x5E26;&#x7684;&#x5DE5;&#x5177;&#xFF08;gst-inspect&#x3001;gst-launch&#xFF09;&#x4EE5;&#x53CA;&#x57FA;&#x4E8E;gstreamer&#x5C01;&#x88C5;&#x7684;&#x5E93;</p>
+<h3 id="core-framework">Core Framework</h3>
+<ul>
+<li><code>&#x4E0A;&#x5C42;&#x5E94;&#x7528;&#x6240;&#x9700;&#x7684;&#x63A5;&#x53E3;</code></li>
+<li><code>Plugin&#x7684;&#x6846;&#x67B6;</code></li>
+<li><code>Pipeline&#x7684;&#x6846;&#x67B6;</code></li>
+<li><code>&#x6570;&#x636E;&#x5728;&#x5404;&#x4E2A;Element&#x95F4;&#x7684;&#x4F20;&#x8F93;&#x53CA;&#x5904;&#x7406;&#x673A;&#x5236;</code></li>
+<li><code>&#x591A;&#x4E2A;&#x5A92;&#x4F53;&#x6D41;&#x95F4;&#x7684;&#x540C;&#x6B65;&#xFF08;&#x6BD4;&#x5982;&#x97F3;&#x89C6;&#x9891;&#x540C;&#x6B65;&#xFF09;</code></li>
+<li><code>&#x5176;&#x4ED6;&#x5404;&#x79CD;&#x6240;&#x9700;&#x7684;&#x5DE5;&#x5177;&#x5E93;</code></li>
+</ul>
+<h3 id="plugins">Plugins</h3>
+<ul>
+<li><code>Protocols</code>&#xFF1A;&#x8D1F;&#x8D23;&#x5404;&#x79CD;&#x534F;&#x8BAE;&#x7684;&#x5904;&#x7406;&#xFF0C;file&#xFF0C;http&#xFF0C;rtsp&#x7B49;&#x3002;</li>
+<li><code>Sources</code>&#xFF1A;&#x8D1F;&#x8D23;&#x6570;&#x636E;&#x6E90;&#x7684;&#x5904;&#x7406;&#xFF0C;alsa&#xFF0C;v4l2&#xFF0C;tcp/udp&#x7B49;&#x3002;</li>
+<li><code>Formats</code>&#xFF1A;&#x8D1F;&#x8D23;&#x5A92;&#x4F53;&#x5BB9;&#x5668;&#x7684;&#x5904;&#x7406;&#xFF0C;avi&#xFF0C;mp4&#xFF0C;ogg&#x7B49;&#x3002;</li>
+<li><code>Codecs</code>&#xFF1A;&#x8D1F;&#x8D23;&#x5A92;&#x4F53;&#x7684;&#x7F16;&#x89E3;&#x7801;&#xFF0C;mp3&#xFF0C;vorbis&#x7B49;&#x3002;</li>
+<li><code>Filters</code>&#xFF1A;&#x8D1F;&#x8D23;&#x5A92;&#x4F53;&#x6D41;&#x7684;&#x5904;&#x7406;&#xFF0C;converters&#xFF0C;mixers&#xFF0C;effects&#x7B49;&#x3002;</li>
+<li><code>Sinks</code>&#xFF1A;&#x8D1F;&#x8D23;&#x5A92;&#x4F53;&#x6D41;&#x8F93;&#x51FA;&#x5230;&#x6307;&#x5B9A;&#x8BBE;&#x5907;&#x6216;&#x76EE;&#x7684;&#x5730;&#xFF0C;alsa&#xFF0C;xvideo&#xFF0C;tcp/udp&#x7B49;&#x3002;</li>
+<li>&#x7B2C;&#x4E09;&#x65B9;&#x63D2;&#x4EF6;</li>
+</ul>
+<hr>
+<h2 id="gstreamer&#x7EC4;&#x4EF6;">GStreamer&#x7EC4;&#x4EF6;</h2>
+<h3 id="element">Element</h3>
+<ul>
+<li>&#x6240;&#x6709;&#x53EF;&#x7528;&#x7EC4;&#x4EF6;&#x7684;&#x57FA;&#x7840;</li>
+<li>&#x4E00;&#x4E2A;Element&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x529F;&#x80FD;</li>
+<li>&#x4F7F;&#x7528;link point&#x4E0E;&#x5916;&#x754C;&#x4EA4;&#x4E92;&#xFF08;pad&#x4F5C;&#x4E3A;&#x8F93;&#x5165;/&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#xFF09;</li>
+<li>&#x4E00;&#x4E2A;Element&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E2A;&#x76F8;&#x540C;&#x7684;pad</li>
+</ul>
+<p><img src="pipeline.png" alt="&#x4E00;&#x4E2A;Element&#x793A;&#x4F8B;"></p>
+<h4 id="&#x521B;&#x5EFA;&#x4E00;&#x4E2A;gstelement">&#x521B;&#x5EFA;&#x4E00;&#x4E2A;GstElement</h4>
+<ol>
+<li><p>&#x501F;&#x52A9;&#x5DE5;&#x5382;&#x5BF9;&#x8C61;<code>GstElementFactory</code>&#xFF0C;&#x5DE5;&#x5382;&#x5BF9;&#x8C61;&#x6839;&#x636E;name&#x5C5E;&#x6027;&#x533A;&#x5206;&#xFF0C;&#x9996;&#x5148;&#x627E;&#x5230;&#x8981;&#x521B;&#x5EFA;&#x7684;element&#x6240;&#x5C5E;&#x7684;&#x5DE5;&#x5382;&#x5BF9;&#x8C61;&#xFF0C;&#x5728;&#x521B;&#x5EFA;GstElement&#x5BF9;&#x8C61;&#x3002;</p>
+<pre><code class="lang-c">GstElementFatory *factory;
+factory = gst_element_factory_find(<span class="hljs-string">&quot;factory_name&quot;</span>)&#xFF1B;
+GstElement *element;
+element = gst_element_factory_create(factory, <span class="hljs-string">&quot;element_name&quot;</span>);
+</code></pre>
+</li>
+<li><p>&#x76F4;&#x63A5;&#x4F7F;&#x7528;<code>gst_element_factory_make(factory_name, element_name)</code><sup><a href="#fn_1" id="reffn_1">1</a></sup>&#x521B;&#x5EFA;&#x3002;</p>
+</li>
+<li><p>&#x5F53;&#x4E0D;&#x5728;&#x4F7F;&#x7528;GstElement&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x4F7F;&#x7528;<code>gst_element_unref(GstElement *element)</code><sup><a href="#fn_2" id="reffn_2">2</a></sup>&#x6765;&#x91CA;&#x653E;element&#x5BF9;&#x8C61;&#x5360;&#x7528;&#x7684;&#x5185;&#x5B58;&#x8D44;&#x6E90;&#x3002;<code>gst_element_unref()</code>&#x4F1A;&#x5C06;&#x5143;&#x4EF6;&#x7684;&#x5F15;&#x7528;&#x8BA1;&#x6570;<code>refcount</code>&#x51CF;&#x5C11;1&#xFF0C;<code>refcount</code>&#x521D;&#x59CB;&#x503C;&#x4E3A;1&#xFF0C;&#x5F53;<code>refcount</code>&#x51CF;&#x5C11;&#x5230;0&#x65F6;&#x5143;&#x4EF6;&#x88AB;&#x9500;&#x6BC1;&#x3002;</p>
+</li>
+</ol>
+<pre><code class="lang-C">gst_element_set_name();        <span class="hljs-comment">//&#x8BBE;&#x7F6E;element&#x5BF9;&#x8C61;&#x7684;name</span>
+gst_element_get_name();        <span class="hljs-comment">//&#x83B7;&#x53D6;element&#x5BF9;&#x8C61;&#x7684;name</span>
+</code></pre>
+<h3 id="&#x7BB1;&#x67DC;bin">&#x7BB1;&#x67DC;bin</h3>
+<ul>
+<li>&#x5BB9;&#x5668;&#xFF1A;&#x5BB9;&#x7EB3;&#x5176;&#x4ED6;&#x5143;&#x4EF6;&#x5BF9;&#x8C61;&#xFF0C;&#x5B9E;&#x9645;&#x81EA;&#x8EAB;&#x4E5F;&#x662F;GstElement&#x5BF9;&#x8C61;</li>
+<li>&#x540C;&#x65F6;&#x7BA1;&#x7406;&#x591A;&#x4E2A;Element&#xFF1A;&#x5BF9;bin&#x7684;&#x72B6;&#x6001;&#x4FEE;&#x6539;&#x4F1A;&#x540C;&#x6B65;&#x5230;bin&#x4E2D;&#x6240;&#x6709;&#x7684;Element&#x4E0A;&#xFF0C;&#x964D;&#x4F4E;&#x4E86;&#x5E94;&#x7528;&#x7684;&#x590D;&#x6742;&#x5EA6;</li>
+<li>&#x9876;&#x5C42;bin&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;pipeline</li>
+</ul>
+<p><img src="bin.png" alt="&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;bin"></p>
+<h4 id="&#x521B;&#x5EFA;&#x4E00;&#x4E2A;bin">&#x521B;&#x5EFA;&#x4E00;&#x4E2A;bin</h4>
+<ol>
+<li><p>&#x501F;&#x52A9;&#x5DE5;&#x5382;&#x65B9;&#x6CD5;</p>
+<pre><code class="lang-C">GstElement *thread, *pipeline;
+<span class="hljs-comment">// &#x521B;&#x5EFA;&#x7EBF;&#x7A0B;&#x5BF9;&#x8C61;&#xFF0C;&#x540C;&#x65F6;&#x4E3A;&#x5176;&#x6307;&#x5B9A;&#x552F;&#x4E00;&#x7684;&#x540D;&#x79F0;&#x3002;</span>
+thread = gst_element_factory_make (<span class="hljs-string">&quot;thread&quot;</span>, <span class="hljs-literal">NULL</span>);
+<span class="hljs-comment">// &#x6839;&#x636E;&#x7ED9;&#x51FA;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x7BA1;&#x9053;&#x5BF9;&#x8C61;&#x3002;</span>
+pipeline = gst_pipeline_new (<span class="hljs-string">&quot;pipeline_name&quot;</span>);
+</code></pre>
+</li>
+<li><p>&#x76F4;&#x63A5;&#x4F7F;&#x7528;<code>gst_bin_new(&quot;bin_name&quot;)</code>&#x521B;&#x5EFA;</p>
+</li>
+</ol>
+<h4 id="&#x5E38;&#x7528;&#x64CD;&#x4F5C;">&#x5E38;&#x7528;&#x64CD;&#x4F5C;</h4>
+<ul>
+<li><p>&#x4F7F;&#x7528;<code>gst_bin_add(GST_BIN(bin), element)</code>&#x5C06;<strong>&#x5DF2;&#x5B58;&#x5728;&#x7684;</strong>&#x5143;&#x4EF6;&#x6DFB;&#x52A0;&#x5230;bin&#x4E2D;</p>
+</li>
+<li><p>&#x4F7F;&#x7528;<code>gst_bin_get_by_name(&quot;GST_BIN(bin), &quot;element_name&quot;)</code>&#x6839;&#x636E;Element&#x7684;name&#x83B7;&#x53D6;bin&#x4E2D;&#x7684;Element&#xFF0C;&#x7531;&#x4E8E;bin&#x53EF;&#x4EE5;&#x5D4C;&#x5957;bin&#xFF0C;&#x56E0;&#x6B64;&#x8BE5;&#x51FD;&#x6570;&#x4F1A;&#x9012;&#x5F52;&#x67E5;&#x627E;</p>
+</li>
+<li><p>&#x4F7F;&#x7528;<code>gst_bin_remove (GST_BIN (bin), element)</code>&#x79FB;&#x9664;bin&#x4E2D;&#x7684;Element</p>
+</li>
+</ul>
+<h4 id="&#x5143;&#x4EF6;&#x7684;&#x72B6;&#x6001;">&#x5143;&#x4EF6;&#x7684;&#x72B6;&#x6001;</h4>
+<ul>
+<li><code>GST_STATE_NULL</code>&#xFF1A;&#x8FD9;&#x662F;&#x9ED8;&#x8BA4;&#x72B6;&#x6001;&#x3002;&#x5728;&#x8FD9;&#x79CD;&#x72B6;&#x6001;&#x4E0B;&#x6CA1;&#x6709;&#x5206;&#x914D;&#x8D44;&#x6E90;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x8F6C;&#x6362;&#x5230;&#x6B64;&#x72B6;&#x6001;&#x5C06;&#x91CA;&#x653E;&#x6240;&#x6709;&#x8D44;&#x6E90;&#x3002;&#x5F53;&#x5143;&#x4EF6;&#x7684;&#x5F15;&#x7528;&#x8BA1;&#x6570;&#x8FBE;&#x5230;0&#x5E76;&#x88AB;&#x91CA;&#x653E;&#x65F6;&#xFF0C;&#x8BE5;&#x5143;&#x4EF6;&#x5FC5;&#x987B;&#x5904;&#x4E8E;&#x6B64;&#x72B6;&#x6001;&#x3002;</li>
+<li><code>GST_STATE_READY</code>&#xFF1A;&#x5728;&#x5C31;&#x7EEA;&#x72B6;&#x6001;&#x4E0B;&#xFF0C;&#x5143;&#x4EF6;&#x5DF2;&#x5206;&#x914D;&#x4E86;&#x5176;&#x6240;&#x6709;&#x5168;&#x5C40;&#x8D44;&#x6E90;&#xFF0C;&#x5373;&#x53EF;&#x4EE5;&#x4FDD;&#x7559;&#x5728;&#x6D41;&#x4E2D;&#x7684;&#x8D44;&#x6E90;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x8003;&#x8651;&#x6253;&#x5F00;&#x8BBE;&#x5907;&#xFF0C;&#x5206;&#x914D;&#x7F13;&#x51B2;&#x533A;&#x7B49;&#x3002;&#x4F46;&#x662F;&#x5728;&#x8FD9;&#x79CD;&#x72B6;&#x6001;&#x4E0B;&#x4E0D;&#x4F1A;&#x6253;&#x5F00;&#x6D41;&#xFF0C;&#x56E0;&#x6B64;&#x6D41;&#x4F4D;&#x7F6E;&#x81EA;&#x52A8;&#x4E3A;&#x96F6;&#x3002;&#x5982;&#x679C;&#x5148;&#x524D;&#x5DF2;&#x6253;&#x5F00;&#x6D41;&#xFF0C;&#x5219;&#x5E94;&#x5728;&#x6B64;&#x72B6;&#x6001;&#x4E0B;&#x5C06;&#x5176;&#x5173;&#x95ED;&#xFF0C;&#x5E76;&#x5E94;&#x91CD;&#x7F6E;&#x4F4D;&#x7F6E;&#xFF0C;&#x5C5E;&#x6027;&#x7B49;&#x3002;</li>
+<li><code>GST_STATE_PAUSED</code>&#xFF1A;&#x5728;&#x6B64;&#x72B6;&#x6001;&#x4E0B;&#xFF0C;&#x5143;&#x4EF6;&#x5DF2;&#x6253;&#x5F00;&#x6D41;&#xFF0C;&#x4F46;&#x672A;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x3002;&#x6B64;&#x65F6;&#x5143;&#x4EF6;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x6D41;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x8BFB;&#x53D6;&#x548C;&#x5904;&#x7406;&#x6570;&#x636E;&#xFF0C;&#x72B6;&#x6001;&#x4E00;&#x65E6;&#x66F4;&#x6539;&#x4E3A;PLAYING&#xFF0C;&#x5373;&#x53EF;&#x5F00;&#x59CB;&#x64AD;&#x653E;&#x3002;&#x603B;&#x4E4B;&#xFF0C;PAUSED&#x4E0E;PLAYING&#x76F8;&#x540C;&#xFF0C;&#x53EA;&#x662F;PAUSED&#x6CA1;&#x6709;&#x8FD0;&#x884C;&#x65F6;&#x949F;&#x3002;</li>
+<li><p><code>GST_STATE_PLAYING</code>&#xFF1A;&#x5728;&#x8BE5;<code>PLAYING</code>&#x72B6;&#x6001;&#x4E0B;&#xFF0C;&#x4E0E;&#x8BE5;<code>PAUSED</code>&#x72B6;&#x6001;&#x4E0B;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#xFF0C;&#x53EA;&#x662F;&#x65F6;&#x949F;&#x73B0;&#x5728;&#x8FD0;&#x884C;&#x3002;</p>
+</li>
+<li><p>&#x4F7F;&#x7528;<code>gst_element_set_state(element, GST_STATE_PLAYING)</code>&#x4FEE;&#x6539;&#x5143;&#x4EF6;&#x72B6;&#x6001;</p>
+</li>
+</ul>
+<h3 id="&#x886C;&#x57AB;pad">&#x886C;&#x57AB;Pad</h3>
+<blockquote>
+<p>&#x886C;&#x57AB;&#x662F;&#x5143;&#x4EF6;&#x4E0E;&#x5916;&#x754C;&#x7684;&#x94FE;&#x63A5;&#x901A;&#x9053;&#xFF0C;&#x5B83;&#x5FC5;&#x987B;&#x4F9D;&#x9644;&#x4E8E;&#x67D0;&#x4E2A;&#x5143;&#x4EF6;&#xFF0C;&#x6709;src&#x548C;sink&#x4E24;&#x4E2A;&#x7AEF;&#x53E3;</p>
+</blockquote>
+<ol>
+<li>&#x83B7;&#x53D6;&#x5143;&#x4EF6;&#x7684;&#x886C;&#x57AB;pad&#xFF1A;<code>gst_element_get_pad(element, &quot;src&quot;)</code></li>
+<li><code>gst_element_get_pad_list(element)</code>&#x83B7;&#x53D6;&#x5143;&#x4EF6;&#x6240;&#x6709;&#x7684;&#x886C;&#x57AB;</li>
+<li><code>gst_pad_get_parent(GstPad *)</code>&#x53EF;&#x4EE5;&#x83B7;&#x5F97;&#x6307;&#x5B9A;&#x886C;&#x57AB;&#x6240;&#x5C5E;&#x7684;&#x5143;&#x4EF6;</li>
+</ol>
+<pre><code class="lang-c">gst_pad_get_name(GstPad *);
+gst_pad_set_name(GstPad *);
+</code></pre>
+<h4 id="pad-link">Pad link</h4>
+<pre><code class="lang-c">GstPad *srcpad, *sinkpad;
+srcpad = gst_element_get_pad(element1, <span class="hljs-string">&quot;src&quot;</span>);
+sinkpad = gst_element_get_pad(element2, <span class="hljs-string">&quot;sink&quot;</span>);
+<span class="hljs-comment">//&#x8FDE;&#x63A5;</span>
+gst_pad_link(srcpad, sinkpad);
+<span class="hljs-comment">//&#x65AD;&#x5F00;</span>
+gst_pad_unlink(srcpad. sinkpad);
+</code></pre>
+<h4 id="pad-capability">Pad Capability</h4>
+<blockquote>
+<p>&#x63CF;&#x8FF0;&#x5143;&#x4EF6;&#x7684;&#x529F;&#x80FD;</p>
+</blockquote>
+<pre><code class="lang-c">GstCaps *caps;
+caps = gst_pad_get_caps (pad);
+g_print (<span class="hljs-string">&quot;pad name is: %s\n&quot;</span>, gst_pad_get_name (pad));
+<span class="hljs-keyword">while</span> (caps) {
+  g_print (<span class="hljs-string">&quot; Capability name is %s, MIME type is %s\n&quot;</span>,
+  gst_caps_get_name (caps),
+  gst_caps_get_mime (caps));
+  caps = caps-&gt;next;
+}
+</code></pre>
+<h4 id="pad-capability-for-filtering">Pad Capability for Filtering</h4>
+<p>&#x901A;&#x8FC7;<code>gst_caps_new_simole()</code>&#x9650;&#x5236;&#x4E24;&#x4E2A;Element&#x4E4B;&#x95F4;&#x7684;&#x6570;&#x636E;&#x6D41;&#x683C;&#x5F0F;</p>
+<pre><code class="lang-c"><span class="hljs-keyword">static</span> gboolean
+<span class="hljs-comment">//</span>
+link_elements_with_filter (GstElement *element1, GstElement *element2)
+{
+  gboolean link_ok;
+  GstCaps *caps;
+
+  caps = gst_caps_new_simple (<span class="hljs-string">&quot;video/x-raw&quot;</span>,
+          <span class="hljs-string">&quot;format&quot;</span>, G_TYPE_STRING, <span class="hljs-string">&quot;I420&quot;</span>,
+          <span class="hljs-string">&quot;width&quot;</span>, G_TYPE_INT, <span class="hljs-number">384</span>,
+          <span class="hljs-string">&quot;height&quot;</span>, G_TYPE_INT, <span class="hljs-number">288</span>,
+          <span class="hljs-string">&quot;framerate&quot;</span>, GST_TYPE_FRACTION, <span class="hljs-number">25</span>, <span class="hljs-number">1</span>,
+          <span class="hljs-literal">NULL</span>);
+
+  link_ok = gst_element_link_filtered (element1, element2, caps);
+  gst_caps_unref (caps);
+
+  <span class="hljs-keyword">if</span> (!link_ok) {
+    g_warning (<span class="hljs-string">&quot;Failed to link element1 and element2!&quot;</span>);
+  }
+
+  <span class="hljs-keyword">return</span> link_ok;
+}
+</code></pre>
+<h4 id="ghost-pad">Ghost Pad</h4>
+<blockquote>
+<p>bin&#x6CA1;&#x6709;&#x5C5E;&#x4E8E;&#x81EA;&#x5DF1;&#x7684;src pad&#x548C;sink pad&#xFF0C;&#x56E0;&#x6B64;&#x5F15;&#x5165;ghost pad&#xFF0C;&#x5C06;&#x5176;&#x4E0E;&#x7B2C;&#x4E00;&#x4E2A;Element&#x7684;sink pad&#x548C;&#x6700;&#x540E;&#x4E00;&#x4E2A;Element&#x7684;src pad&#x76F8;&#x8FDE;&#x63A5;&#xFF0C;&#x5BF9;bin&#x7684;&#x64CD;&#x4F5C;&#x5B9E;&#x9645;&#x60F3;&#x8BA9;&#x4E0E;&#x5BF9;Element&#x7684;pad&#x64CD;&#x4F5C;</p>
+</blockquote>
+<h4 id="&#x52A8;&#x6001;&#x886C;&#x57AB;-dynamic-pads">&#x52A8;&#x6001;&#x886C;&#x57AB; Dynamic pads</h4>
+<blockquote>
+<p>&#x521B;&#x5EFA;&#x5143;&#x4EF6;&#x65F6;&#x67D0;&#x4E9B;&#x5143;&#x4EF6;&#x4E0D;&#x4E00;&#x5B9A;&#x4F1A;&#x7ACB;&#x5373;&#x751F;&#x6210;&#x6240;&#x6709;&#x7684;pad</p>
+</blockquote>
+<p><img src="oggdemux.png" alt="oggdemux"></p>
+<p>oggdemux&#x5143;&#x4EF6;&#x521B;&#x5EFA;&#x65F6;&#x53EA;&#x6709;&#x4E00;&#x4E2A;sink pad&#xFF0C;&#x5B83;&#x4F1A;&#x6839;&#x636E;&#x63A5;&#x6536;&#x5230;&#x7684;ogg&#x6D41;&#x4FE1;&#x606F;&#x4E3A;ogg&#x6D41;&#x52A8;&#x6001;&#x521B;&#x5EFA;src pad&#xFF0C;&#x5E76;&#x5728;&#x63A5;&#x53D7;&#x5B8C;&#x4E4B;&#x540E;&#x52A8;&#x6001;&#x5220;&#x9664;&#x521B;&#x5EFA;&#x7684;src pad</p>
+<h3 id="bus">Bus</h3>
+<blockquote>
+<p>Bus&#x662F;gstreamer&#x5185;&#x90E8;&#x7528;&#x4E8E;&#x5C06;&#x6D88;&#x606F;&#x4ECE;&#x5185;&#x90E8;&#x4E0D;&#x540C;&#x7684;streaming&#x7EBF;&#x7A0B;&#xFF0C;&#x4F20;&#x9012;&#x5230;bus&#x7EBF;&#x7A0B;&#xFF0C;&#x518D;&#x7531;bus&#x6240;&#x5728;&#x7EBF;&#x7A0B;&#x5C06;&#x6D88;&#x606F;&#x53D1;&#x9001;&#x5230;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x3002;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x53EA;&#x9700;&#x8981;&#x5411;bus&#x6CE8;&#x518C;&#x6D88;&#x606F;&#x5904;&#x7406;&#x51FD;&#x6570;&#xFF0C;&#x5373;&#x53EF;&#x63A5;&#x6536;&#x5230;pipline&#x4E2D;&#x5404;element&#x6240;&#x53D1;&#x51FA;&#x7684;&#x6D88;&#x606F;&#xFF0C;&#x4F7F;&#x7528;bus&#x540E;&#xFF0C;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5C31;&#x4E0D;&#x7528;&#x5173;&#x5FC3;&#x6D88;&#x606F;&#x662F;&#x4ECE;&#x54EA;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x53D1;&#x51FA;&#x7684;&#xFF0C;&#x907F;&#x514D;&#x4E86;&#x5904;&#x7406;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x540C;&#x65F6;&#x53D1;&#x51FA;&#x6D88;&#x606F;&#x7684;&#x590D;&#x6742;&#x6027;&#x3002;</p>
+</blockquote>
+<h3 id="gstreamer&#x6570;&#x636E;&#x6D88;&#x606F;&#x4EA4;&#x4E92;">Gstreamer&#x6570;&#x636E;&#x6D88;&#x606F;&#x4EA4;&#x4E92;</h3>
+<p><img src="interaction.png" alt="img"></p>
+<p><sup><a href="#fn_2" id="reffn_2">2</a></sup>:</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Device_Tree/设备树.html" class="navigation navigation-prev " aria-label="Previous page: Device Tree">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../I2C/I2C通信协议.html" class="navigation navigation-next " aria-label="Next page: I2C Protocol">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Gstreamer","level":"3.1","depth":1,"next":{"title":"I2C Protocol","level":"4.1","depth":1,"path":"I2C/I2C通信协议.md","ref":"I2C/I2C通信协议.md","articles":[]},"previous":{"title":"Device Tree","level":"2.1","depth":1,"path":"Device_Tree/设备树.md","ref":"Device_Tree/设备树.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","back-to-top-button","expandable-chapters-small","code","-lunr","search-pro","github","emphasize","page-treeview","hide-element"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page-treeview":{"collapsed":false,"copyright":"Copyright &#169; aleen42","minHeaderCount":"2","minHeaderDeep":"6"},"emphasize":{},"github":{"url":"https://github.com/gesanqiu"},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"structure":{"readme":"EB5_intro.md"},"highlight":{},"back-to-top-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Ricardo Lu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Trantor","links":{"sidebar":{"Blog Page":"http://fzl123.top"}},"gitbook":"*"},"file":{"path":"Gstreamer/Gstreamer.md","mtime":"2021-02-28T05:20:46.755Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-28T06:49:41.966Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
