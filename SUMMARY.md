@@ -2,6 +2,10 @@
 
 - [Introduction](README.md)
 
+## Linux
+
+- [Pinctrl Subsystem](pinctrl/Pinctrl_Subsystem.md)
+
 ## Linux Device Tree
 
 * [Device Tree](Device_Tree/设备树.md)
