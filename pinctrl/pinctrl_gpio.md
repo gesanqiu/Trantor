@@ -12,7 +12,7 @@
 
 ## GPIO子系统
 
-GPIO作为嵌入式领域最基础的部分，我想大部分嵌入式工程师的入门都是从配置GPIO引脚，改变GPIO电平开始的。gpio子系统帮助我们管理整个系统gpio的使用情况，同时内核通过`./driver/gpio/gpiolib.c`对外提供了一系列操控GPIO资源的接口。
+GPIO作为嵌入式领域最基础的部分，我想大部分嵌入式工程师的入门都是从配置GPIO引脚，改变GPIO电平开始的。gpio子系统帮助我们管理整个系统gpio的使用情况，同时内核通过`./drivers/gpio/gpiolib.c`对外提供了一系列操控GPIO资源的接口。
 
 ## 两者的交互
 
@@ -42,7 +42,7 @@ GPIO的HW block应该和其他功能复用的block是对等关系的，它们共
 >
 > 然后考虑一下一个包含32个gpio的chip（一般硬件的gpio bank都是32个），如果它们都可以单独控制，则会出现32个function。而系统又不止有一个chip，灾难就发生了，我们的device tree文件将会被一坨坨的gpio functions撑爆！
 
-可能和文章发表日期有关，这个例子我觉得有些晦涩，因为据同事的说法只有早期需要自己手动对每个function进行配置的时候才会发生这种情况，目前我基于高通的平台做开发时，Pinctrl的配置已经变得非常简单，高通有自己的总线设计{% em %}（Qualcomm Universal Peripheral v3 Serial Engine， QUP v3 SE）{% endem %}，对SOC的Pin事先做了详细的configure和function的抽象，开发人员只需要按照datasheet调用即可。
+可能和文章发表日期有关，这个例子我觉得有些晦涩，因为据同事的说法只有早期需要自己手动对每个function进行配置的时候才会发生这种情况，目前我基于高通的平台做开发时，Pinctrl的配置已经变得非常简单，高通有自己的总线设计{% em %}（Qualcomm Universal Peripheral v3 Serial Engine， QUP v3 SE）{% endem %}，对SOC的Pin事先做了详细的configure和function的抽象，开发人员只需要按照datasheet配置即可。
 
 以下是我对这个例子的一些理解：
 
@@ -62,4 +62,8 @@ GPIO的HW block应该和其他功能复用的block是对等关系的，它们共
 由于采用了耦合设计，pinctrl直接向gpio提供接口进行资源的控制，这样就跳过了Multiplexer选择复用功能的过程，而是在gpio申请pin脚的时候直接由pinctrl将该pin脚指定为gpio功能。当gpio driver需要使用某个管脚的时候，直接调用`pinctrl_request_gpio`，向pinctrl subsystem申请，pinctrl subsystem会维护一个gpio number到pin number的map，将gpio subsystem传来的gpio number转换为pin number之后，调用`struct pinmux_ops`中有关的回调函数即可。
 
 {% em %}**即由于采用耦合设计——它们寄存器处于一个memory range，使得gpio这个function的配置可以由pinctrl直接实现，对上层就表现为不需要再额外详细配置gpio这个function，gpio driver只需要提供gpio number即可。**{% endem %}
+
+
+
+[^1]: [linux内核中的GPIO系统之（5）：gpio subsysem和pinctrl subsystem之间的耦合](http://www.wowotech.net/gpio_subsystem/pinctrl-and-gpio.html)
 
