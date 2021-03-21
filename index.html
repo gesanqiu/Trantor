@@ -77,7 +77,7 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="pinctrl/Pinctrl_Subsystem.html" />
+    <link rel="next" href="pinctrl/pinctrl_gpio.html" />
     
     
 
@@ -132,16 +132,16 @@
 
     
         
-        <li class="header">Linux</li>
+        <li class="header">Linux Pinctrl Subsystem</li>
         
         
     
-        <li class="chapter " data-level="2.1" data-path="pinctrl/Pinctrl_Subsystem.html">
+        <li class="chapter " data-level="2.1" data-path="pinctrl/pinctrl_gpio.html">
             
-                <a href="pinctrl/Pinctrl_Subsystem.html">
+                <a href="pinctrl/pinctrl_gpio.html">
             
                     
-                    Pinctrl Subsystem
+                    Pinctrl & GPIO
             
                 </a>
             
@@ -308,6 +308,19 @@
             
         </li>
     
+        <li class="chapter " data-level="8.2" data-path="ion/ion.html">
+            
+                <a href="ion/ion.html">
+            
+                    
+                    ION Buffer
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
@@ -353,8 +366,22 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="introduction">Introduction</h1>
-<p>Something represent my growth.</p>
+                                <div class="treeview__container"><ul>
+<li><div><a href="#introduction">Introduction</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#update-log">Update log</a><i></i></div></li>
+</ul></li>
+</ul>
+</div>
+
+<h1 id="introduction">Introduction</h1>
+<p>Something represents my growth.</p>
+<h2 id="update-log">Update log</h2>
+<ul>
+<li>2021.02.28--First commit</li>
+<li>2021.03.06--Update pinctrl&amp;gpio</li>
+<li>2021.03.21--Update ION buffer</li>
+</ul>
 
                                 
                                 </section>
@@ -383,7 +410,7 @@
             
                 
                 
-                <a href="pinctrl/Pinctrl_Subsystem.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Pinctrl Subsystem">
+                <a href="pinctrl/pinctrl_gpio.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Pinctrl & GPIO">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -394,7 +421,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"Pinctrl Subsystem","level":"2.1","depth":1,"path":"pinctrl/Pinctrl_Subsystem.md","ref":"pinctrl/Pinctrl_Subsystem.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","back-to-top-button","expandable-chapters-small","code","-lunr","search-pro","github","emphasize","page-treeview","hide-element"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page-treeview":{"collapsed":false,"copyright":"Copyright &#169; aleen42","minHeaderCount":"2","minHeaderDeep":"6"},"emphasize":{},"github":{"url":"https://github.com/gesanqiu"},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"structure":{"readme":"EB5_intro.md"},"highlight":{},"back-to-top-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Ricardo Lu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Trantor","links":{"sidebar":{"Blog Page":"http://fzl123.top"}},"gitbook":"*"},"file":{"path":"README.md","mtime":"2021-02-28T07:06:21.758Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-06T08:04:22.484Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"Pinctrl & GPIO","level":"2.1","depth":1,"path":"pinctrl/pinctrl_gpio.md","ref":"pinctrl/pinctrl_gpio.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","back-to-top-button","expandable-chapters-small","code","-lunr","search-pro","github","emphasize","page-treeview","hide-element"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page-treeview":{"collapsed":false,"copyright":"Copyright &#169; aleen42","minHeaderCount":"2","minHeaderDeep":"6"},"emphasize":{},"github":{"url":"https://github.com/gesanqiu"},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"structure":{"readme":"EB5_intro.md"},"highlight":{},"back-to-top-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Ricardo Lu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Trantor","links":{"sidebar":{"Blog Page":"http://fzl123.top"}},"gitbook":"*"},"file":{"path":"README.md","mtime":"2021-03-21T07:23:45.547Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-21T07:25:01.865Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
