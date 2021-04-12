@@ -12,7 +12,7 @@
 
 ## Gstreamer
 
-- [Gstreamer](Gstreamer/Gstreamer.md)
+- [Gstreamer](GStreamer/GStreamer.md)
 
 ## I2C
 
@@ -27,7 +27,7 @@
 
 ## OpenMAX
 
-- [OpenMAX概述](OpenMAX/OpenMAX概述.md)
+- [OpenMAX概述](OpenMax/OpenMAX概述.md)
 
 ## Others
 
