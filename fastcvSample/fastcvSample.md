@@ -1,4 +1,4 @@
-# FastCV APIs: NV12 to BGR888
+# FastCV APIs: NV12 to BGR888(Compile on host machine)
 
 ## 1. Setting up the host Linux machine
 
@@ -130,4 +130,4 @@ $ ffmpeg -i test.jpg -s 800x480 -pix_fmt nv12 ./test_nv12.yuv
 ```
 
 - To understand the file read/write, you should learn more details of YUV420 format and BGR format.
-
+- Use fastCV on target device, please reference[fastCV C++ lib usage](https://github.com/gesanqiu/fastCV-sample).
