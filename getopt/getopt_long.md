@@ -82,7 +82,6 @@ int main()
 {
 	while(1) {
         int c;
-        int lopt;
         struct option long_opts[] {
             {"input_img", required_argument, NULL, 'i'},
             {"input_fmt", required_argument, NULL, 's'},
@@ -100,11 +99,6 @@ int main()
 
         switch (c)
         {
-        case 0:
-            switch(lopt)
-            case 1:
-            	// 
-                break;
         case 'i':
             image.path = optarg;
             break;
@@ -125,7 +119,7 @@ int main()
             break;
         case 'h':
         default:
-            usage();
+            // usage();
             exit(-1);
         }
     }
