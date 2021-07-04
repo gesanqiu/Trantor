@@ -28,7 +28,7 @@ enum ion_heap_type {
 };
 ```
 
-每个`heap`中可分配若干个`buffer`，每个`client`(`ion_open()`返回的`fd`)通过`handle`管理对应的`buffer`。每个`buffer`只能有一个`handle`对应，{% em %}每个用户进程只能有一个`client`{% endem %}，每个`client`可能有多个`handle`(申请多块内存空间)。两个`client`通过文件描述符`fd`，通过映射方式，将相应内存映射，实现共享内存。
+每个`heap`中可分配若干个`buffer`，每个`client`(`ion_open()`返回的`fd`)通过`handle`管理对应的`buffer`。每个`buffer`只能有一个`handle`对应，每个用户进程只能有一个`client`，每个`client`可能有多个`handle`(申请多块内存空间)。两个`client`通过文件描述符`fd`，通过映射方式，将相应内存映射，实现共享内存。
 
 ![ion](ion.png)
 
