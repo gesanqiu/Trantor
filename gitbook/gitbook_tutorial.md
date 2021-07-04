@@ -97,6 +97,7 @@ GitBook 有 [插件官网](https://links.jianshu.com/go?to=https%3A%2F%2Fplugins
 - `hide-element`为隐藏组件插件，用于隐藏`gitbook Copyright`  
 - `page-treeview`目录插件
 - `simple-page-toc`简易导航插件
+- `gitbook install`安装新插件
 
 ## Markdown
 
